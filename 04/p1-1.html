@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一回第一节：石猴出生</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.body1{
+            width: 800px;
+            height: auto;
+            background-color: rgb(246,241,231) ;
+            margin: 0 auto;
+        }
+        p.title{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        li{
+            line-height: 37px;
+            font-size: 20px;
+            text-indent: 2em;
+            color: rgba(0,0,0,.9);
+            font-weight: 400;
+        }
+        div.worker{
+            width: auto;
+            height: 60px;
+        }
+        div.block{
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            color: gray;
+        }
+        div.block img{
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: -50px;
+            float: left;
+        }
+       div.conten{
+           width: 700px;
+           margin-left: 50px;
+       }
+       div.btns{
+           margin-top: 50px;
+           width: 800px;
+           text-align: center;
+           height: 200px;
+       }
+       div.btns button{
+           margin: 50px;
+           width: 100px;
+           height:50px;
+           border-radius: 10px;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="body1">
+        <p class="title">第一回第一节：石猴出生</p>
+        <div class="worker">
+            <div class="block">
+                <img src="img/woker1.png" alt="">
+                <p>西游记</p>
+            </div>
+            <div class="block">
+                <img src="img/woker2.png" alt="">
+                <p>吴承恩</p>
+            </div>
+            <div class="block">
+                <img src="img/woker3.png" alt="">
+                <p>345字</p> 
+            </div>    
+          
+        </div>
+        <div class="conten">
+            <ul>
+                <li>自从盘古开天辟地以来，世界分为四大部洲：东胜神洲，西牛贺洲，南瞻部洲，北俱芦洲。</li>
+                <li>在东胜神洲有一个傲来国，在傲来国中有座花果山。在这花果山山顶绝高的地方，有一块仙石。这块仙石浑圆如同一个圆球，它有三丈六尺五寸高，二丈四尺方圆。这仙石上面也有九窍八孔，仙石旁边没有生长一棵树木，倒长满了灵芝和兰草</li>
+                <li>自从有了天地以来，这块仙石也不知存在了多少亿万年了。它每天吸收日月精华，久而久之，就有了灵通。石头里有了一个仙胎，这一天突然仙石崩裂，从里面产出一个石卵，风一吹，这石卵就化成了一个石猴。这石猴也有五官，也有四肢。只见他一边学爬一边学走，朝东南西北拜了拜，睁开眼睛，眼里射出两道金光，那金光直射天宫，正好惊动了天上的玉皇大帝。</li>
+                <li>玉帝一听，微笑地说：“下界的生灵，都是天地精华所生，由他去吧，不用管他。”</li>
+            </ul>
+        </div>
+        <div class="btns">
+        <button class="list">前往目录</button>
+         <button class="next">前往下一节</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var list = document.querySelector(".list");
+    var next = document.querySelector(".next");
+
+    list.onclick = function(){
+        window.open('index.html','_self','')
+    }
+
+    next.onclick = function(){
+        window.open('p1-2.html','_self','')
+    }
+</script>
+</html>

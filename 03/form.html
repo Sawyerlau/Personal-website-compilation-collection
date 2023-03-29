@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Form</title>
+    <!-- <script>
+      document.querySelector('input').onclick=function(){
+          alert('1')
+      }
+    </script> -->
+    <style>
+    
+        table tr td img {
+            height: 161px;
+            width: 150px;
+        }
+        table {
+            width: 800px;
+        }
+       .a1 {
+            width: 100px;
+            text-align: center;
+            background-color: #dcdcdc;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+      
+       table tr .pic {
+            height: 161px;
+            width: 150px;
+       }
+       .conten {
+           width: 800px;
+           margin: 200px auto;
+       }
+       /* 个人简介标题 */
+       .conten .title h1{
+           font-size: 50px;
+           width: 200px;
+          
+           text-align: center;
+           margin: 0 auto 10px;
+       }
+      div.back {
+          text-align: center;
+          width: 800px;
+          margin: 0px auto;
+
+      }
+      table tr td.conten1 {
+          text-align: left;
+      }
+      input.back {
+          overflow: hidden;
+          width: 800px;
+          height: 100px;
+        margin: 100px auto;
+        border-radius: 20px;
+        border: 2px solid skyblue;
+        background-color: skyblue;
+        font-size: 30px;
+        color: hotpink;
+        text-align: center;
+       }
+       input.back:hover ,.bottom input.submit:hover ,.bottom input.reset:hover{
+           background-color: pink;
+       }
+       div.bottom {
+           width: 800px;
+           height: 150px;
+           text-align: center;
+           margin: -10px auto;
+           /* background-color: antiquewhite; */
+           overflow: hidden;
+       }
+       div.bottom input.submit,div.bottom input.reset {
+           /* display: block; */
+        float: left;
+          width: 100px;
+          height: 50px;
+        /* margin-bottom: 200px; */
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 200px;
+        border: 2px solid skyblue;
+        background-color: skyblue;
+        font-size: 10px;
+        color: hotpink;
+        text-align: center;
+       }
+      div.sex {
+          width: 100px;
+      }
+
+      textarea {
+          width: 700px;
+          height: 100px;
+      }
+    </style>
+</head>
+<body>
+    <div class="conten" >
+        <div class="title">
+            <h1>个人简历</h1>
+        </div>
+        <form action="#" >
+        <table border="1" cellpadding="10">
+            <tr>
+                <td class="a1">姓名</td>
+                <td class="content1 name1">
+                    <input type="text" placeholder="请输入你的名字">
+                </td>
+                <td class="a1">性别</td>
+                <td class="content1">
+                    <div class="sex">
+                        <input type="radio" name="sex" id="nan"><label for="nan">男</label>
+                        <input type="radio" name="sex" id="nv"><label for="nv">女</label>
+                    </div>
+                    
+                </td>
+                <td rowspan="3" class="pic">
+                    <input type="file">
+                    <img src="" alt="请先上传图片" >
+                </td>
+            </tr>
+            <tr>
+                <td class="a1">学历</td>
+                <td class="content1">
+                    <select name="" id="">
+                        <option value="">博士</option>
+                        <option value="">硕士</option>
+                        <option value="" selected="selected">本科</option>
+                        <option value="">专科</option>
+                    </select>
+                </td>
+                <td class="a1">政治面貌</td>
+                <td class="content1">
+                    <select name="" id="">
+                        <option value="">中共党员</option>
+                        <option value="">预备党员</option>
+                        <option value="">发展对象</option>
+                        <option value="" selected="selected">共青团员</option>
+                    </select>
+                </td>
+              
+            </tr>
+            <tr>
+                <td class="a1">专业</td>
+                <td class="content1">
+                    <input type="text" placeholder="请输入你的专业">
+                </td>
+                <td class="a1">籍贯</td>
+                <td class="content1">
+                    <input type="text" name="" id="" style="width: 25px;" placeholder="广东">省<input type="text" name="" id="" style="width: 25px;" placeholder="肇庆" >市
+                </td>
+
+            </tr>
+            <tr>
+                <td class="a1">出生年月</td>
+                <td class="content1">
+                    <select name="" id="">
+                        <option>	1999	</option>
+                        <option>	2000	</option>
+                        <option>	2001	</option>
+                        <option>	2002	</option>
+                        <option>	2003	</option>
+                        <option>	2004	</option>
+                        <option>	2005	</option>
+                        <option>	2006	</option>
+                        <option>	2007	</option>
+                        <option>	2008	</option>
+                        <option>	2009	</option>
+                        <option>	2010	</option>
+                        <option>	2011	</option>
+                        <option>	2012	</option>
+                        <option>	2013	</option>
+                        <option>	2014	</option>
+                        <option>	2015	</option>
+                        <option>	2016	</option>
+                        <option>	2017	</option>
+                        <option>	2018	</option>
+                        <option>	2019	</option>
+                        <option>	2020	</option>
+                        <option>	2021	</option>
+                        <option>	2022	</option>
+                    </select>年
+                    <select name="" id="">
+                        <option>	31	</option>
+                            <option>	30	</option>
+                            <option>	29	</option>
+                            <option>	28	</option>
+                            <option>	27	</option>
+                            <option>	26	</option>
+                            <option>	25	</option>
+                            <option>	24	</option>
+                            <option>	23	</option>
+                            <option>	22	</option>
+                            <option>	21	</option>
+                            <option>	20	</option>
+                            <option>	19	</option>
+                            <option>	18	</option>
+                            <option>	17	</option>
+                            <option>	16	</option>
+                            <option>	15	</option>
+                            <option>	14	</option>
+                            <option>	13	</option>
+                            <option>	12	</option>
+                            <option>	11	</option>
+                            <option>	10	</option>
+                            <option>	9	</option>
+                            <option>	8	</option>
+                            <option>	7	</option>
+                            <option>	6	</option>
+                            <option>	5	</option>
+                            <option>	4	</option>
+                            <option>	3	</option>
+                            <option>	2	</option>
+                            <option selected="selected">	1	</option>
+
+                    </select>月
+                </td>
+                <td class="a1">特长</td>
+                <td colspan="2" class="content1">
+                    <input type="text" name="" id="" placeholder="请填写你的特长" >
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="a1">联系电话</td>
+                <td colspan="4" class="content1">
+                    <input type="text" placeholder="请输入你的联系方式" maxlength="11">
+                </td>
+              
+            </tr>
+            <tr>
+                <td class="a1">通信地址</td>
+                <td colspan="4" class="content1">
+                    <input type="text" placeholder="请输入你的通信地址" >
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="a1">Email</td>
+                <td colspan="4" class="content1">
+                    <input type="email" placeholder="请输入你的电子邮箱" >
+                </td>
+            </tr>
+            <tr>
+                <td class="a1">求职意向</td>
+                <td colspan="4" class="content1">
+                    <input type="text" placeholder="请输入你的求职意向" >
+                </td>
+               
+            </tr>
+            <tr>
+                <td class="a1">个人能力</td>
+                <td colspan="4" class="content1">
+                   <textarea name="" id="" cols="30" rows="10">1.
+2.
+3.
+4.
+5.
+6.</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="a1">主干课程</td>
+                <td colspan="4" class="content1"> 
+                    <textarea name="" id="" cols="30" rows="10">
+</textarea></td>
+            </tr>
+            <tr>
+                <td class="a1">主要实践</td>
+                <td colspan="4" class="content1"> 
+                    <textarea name="" id="" cols="30" rows="10">
+</textarea></td>
+            </tr>
+            <tr>
+                <td class="a1">自我评价</td>
+                 <td colspan="4" class="content1"> 
+                    <textarea name="" id="" cols="30" rows="10">
+</textarea></td>
+        
+        </table>
+        <div class="bottom">
+            
+            <input type="submit" class="submit" value="提交信息" name="" id="" onclick="alert('敬请期待')">
+            
+            <input type="reset"  class="reset" value="重置信息" name="" id="">
+         </div>
+      </form>
+
+        <div >
+            <input class="back" type="button" value="👉点击返回选择主页👈" OnClick=window.location.href="index.html">
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一回第三节:猴王远虑</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.body1{
+            width: 800px;
+            height: auto;
+            background-color: rgb(246,241,231) ;
+            margin: 0 auto;
+        }
+        p.title{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        li{
+            line-height: 37px;
+            font-size: 20px;
+            text-indent: 2em;
+            color: rgba(0,0,0,.9);
+            font-weight: 400;
+        }
+        div.worker{
+            width: auto;
+            height: 60px;
+        }
+        div.block{
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            color: gray;
+        }
+        div.block img{
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: -50px;
+            float: left;
+        }
+       div.conten{
+           width: 700px;
+           margin-left: 50px;
+       }
+       div.btns{
+           margin-top: 50px;
+           width: 800px;
+           text-align: center;
+           height: 200px;
+       }
+       div.btns button{
+           margin: 50px;
+           width: 100px;
+           height:50px;
+           border-radius: 10px;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="body1">
+        <p class="title">第一回第三节:猴王远虑</p>
+        <div class="worker">
+            <div class="block">
+                <img src="img/woker1.png" alt="">
+                <p>西游记</p>
+            </div>
+            <div class="block">
+                <img src="img/woker2.png" alt="">
+                <p>吴承恩</p>
+            </div>
+            <div class="block">
+                <img src="img/woker3.png" alt="">
+                <p>355字</p> 
+            </div>    
+          
+        </div>
+        <div class="conten">
+            <ul>
+                <li>这美猴王带着一群猿猴、猕猴、马猴等，分派了君臣佐使的关系，白天游玩花果山，夜晚住在水帘洞。独自称王，生活不胜欢乐。</li>
+                <li>美猴王带着众猴无拘无束地生活在花果山，不知不觉间就过了几百年。这一天，猴王正与群猴喝酒玩耍，忽视间神情忧伤，眼中落泪。众猴慌忙跑过来拜倒在地说：“大王，你为什么烦恼？”</li>
+                <li>猴王说：“我们现在虽然生活自由自在，但我却有一点儿远虑，所以烦恼。”</li>
+                <li>猴子们笑着说：“大王您好不知足，像我们这样每天欢乐自在，在这仙山福地，古洞神洲，不归麒麟凤凰管，也不伏人间帝王的拘束，自由自在。大王，你还有什么忧虑呢？”</li>
+                <li>猴王说：“现在我们虽然不归别人管，不怕禽兽害，但等到将来年老体衰，暗中还有阎王老子管着，到那时，我们一个个魂归地府，怎么能够永远享受这世间的欢乐呢？”</li>
+            </ul>
+        </div>
+        <div class="btns">
+        <button class="list">前往目录</button>
+         <button class="next">前往下一章</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var list = document.querySelector(".list");
+    var next = document.querySelector(".next");
+
+    list.onclick = function(){
+        window.open('index.html','_self','')
+    }
+
+    next.onclick = function(){
+        window.open('p2-1.html','_self','')
+    }
+</script>
+</html>

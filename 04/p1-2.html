@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一回第二节：石猴称王</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.body1{
+            width: 800px;
+            height: auto;
+            background-color: rgb(246,241,231) ;
+            margin: 0 auto;
+        }
+        p.title{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        li{
+            line-height: 37px;
+            font-size: 20px;
+            text-indent: 2em;
+            color: rgba(0,0,0,.9);
+            font-weight: 400;
+        }
+        div.worker{
+            width: auto;
+            height: 60px;
+        }
+        div.block{
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            color: gray;
+        }
+        div.block img{
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: -50px;
+            float: left;
+        }
+       div.conten{
+           width: 700px;
+           margin-left: 50px;
+       }
+       div.btns{
+           margin-top: 50px;
+           width: 800px;
+           text-align: center;
+           height: 200px;
+       }
+       div.btns button{
+           margin: 50px;
+           width: 100px;
+           height:50px;
+           border-radius: 10px;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="body1">
+        <p class="title">第一回第二节：石猴称王</p>
+        <div class="worker">
+            <div class="block">
+                <img src="img/woker1.png" alt="">
+                <p>西游记</p>
+            </div>
+            <div class="block">
+                <img src="img/woker2.png" alt="">
+                <p>吴承恩</p>
+            </div>
+            <div class="block">
+                <img src="img/woker3.png" alt="">
+                <p>346字</p> 
+            </div>    
+          
+        </div>
+        <div class="conten">
+            <ul>
+                <li>这石猴在那山中，会走会跳，吃草木，喝山泉，采花果；与狼虫做伙伴，与虎豹同生活，与獐鹿做朋友，跟猕猴也走得近；夜晚睡在石崖下面，白天游玩在山峰石洞之中。</li>
+                <li>山里的生活何其逍遥，真的是不知今夕是何年。这一天天气炎热，猴子们都跑到松树荫下玩耍，以躲避暑热。</li>
+                <li>这群猴子玩了一会，还是燥热难耐，就一个个跳到溪水中去洗澡了。只见那水奔腾汹涌，溅起像煮沸开水一样的白色浪花。</li>
+                <li>俗话说，禽有禽言，兽有兽语。猴子们都说：“这股溪水不知是从哪里来的呢？我们今天正好没事，要不大家就顺着这水流一起去找找它的源头？”这么一说，群猴们一个个顺着水流爬上山石，不大会工夫，就来到了一处瀑布面前，原来这里就是源头。</li>
+                <li>猴子们拍着手说：“好水，好水。原来这股水是从山底下冒出来的，连接着大海呢。”</li>
+            </ul>
+        </div>
+        <div class="btns">
+        <button class="list">前往目录</button>
+         <button class="next">前往下一节</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var list = document.querySelector(".list");
+    var next = document.querySelector(".next");
+
+    list.onclick = function(){
+        window.open('index.html','_self','')
+    }
+
+    next.onclick = function(){
+        window.open('p1-3.html','_self','')
+    }
+</script>
+</html>

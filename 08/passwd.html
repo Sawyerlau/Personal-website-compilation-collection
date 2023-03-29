@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .item{
+            width: 400px;
+            height: 350px;
+            margin: 30px auto;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid black
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border: 0px;
+            margin-top: 50px;
+        }
+        p:nth-child(1){
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 55px;
+        }
+        p:nth-child(2){
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">
+        <p>你的账号是"root"</p>
+        <p>密码是"root"</p>
+        <button onclick="back()">点我返回登录页面</button>
+    </div>
+</body>
+<script>
+    function back(){
+        window.open("index.html","_self","","")
+    }
+</script>
+</html>

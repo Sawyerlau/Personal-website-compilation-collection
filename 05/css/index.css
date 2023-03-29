@@ -1,0 +1,286 @@
+/* 总体部分 */
+   *{
+	   margin: 0;
+	   padding: 0;
+	   list-style: none;
+   }
+   	div.back{
+		background-color: rgb(224,223,221);
+		width: 630px;
+		height: 830px;
+		padding-left: 25px;
+		padding-top: 25px;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	div.conten{
+		width: 600px;
+		height: 800px;
+		background-color: rgb(230,230,230);
+		position: absolute;
+	}
+	div.left{
+		width: 165px;
+		height: 750px;
+		/* background-color: pink; */
+		position: relative;
+		left: 30px;
+		top:25px;
+		float: left;
+	}
+	div.solid{
+		width: 0px;
+		height: 750px;
+		border: 1px solid black;
+		position: relative;
+		left: 210px;
+		top: 25px;
+	}
+	div.right{
+		width: 360px;
+		height: 750px;
+		left: 230px;
+		top:-726px;
+		position: relative;
+	}
+	/* left部分 */
+	img.man{
+		height: 130px;
+		border-radius: 50%;
+		position: relative;
+		left: 5px;
+		top: 5px;
+	}
+	div.dashed{
+		border-radius: 50%;
+		border-style: dashed;
+		border-width: 2px;
+		width: 140px;
+		height: 140px;
+		position: absolute;
+		left: -5px;
+	}
+	ul.left{
+		position: absolute;
+		left: 15px;
+	}
+	li.L-1{
+		position: relative;
+	}
+	li.L-2{
+		font-size: 32px;
+		position: relative;
+		top: 160px;
+		text-align: center;
+		letter-spacing:5px
+	}
+	li.L-3,li.L-5{
+		position: relative;
+		top: 160px;
+		font-size: 11px;
+	}
+	li.L-5{
+		top:180px;
+		left: 5px;
+		}
+	img.people{
+		height: 31px;
+		position: relative;
+		top: 180px;
+		left: 52px;
+	}
+	li.L-6{
+		position: relative;
+		top:190px;
+		left: 5px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	img.work{
+		height: 31px;
+		position: relative;
+		top: 220px;
+		left: 52px;
+	}
+	li.L-8{
+		position: relative;
+		font-size: 11px;
+		top:220px;
+		left: 5px;
+	}
+	li.L-9{
+		position: relative;
+		top:240px;
+		left: 5px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	img.study{
+		height: 31px;
+		position: relative;
+		top: 260px;
+		left: 52px;
+	}
+	li.L-11{
+		position: relative;
+		font-size: 11px;
+		top:270px;
+		left: 5px;
+	}
+	li.L-12{
+		position: relative;
+		top:280px;
+		left: 5px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+		/* right部分 */
+	img.history{
+		height: 31px;
+		position: relative;
+		top: 0px;
+		left: 165px;
+	}
+
+	li.R-2{
+		position: relative;
+		font-size: 11px;
+		left:15px;
+		margin-bottom: 10px;
+	}
+	/* R-3内部布局 */
+	li.R-3>li{
+		line-height: 20px;
+	}
+	li.R-3-1{
+		float: left;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.R-3-2{
+		position: relative;
+		left: 30px;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.R-3-3{
+		float: left;
+		font-size: 12px;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+	.R-3-4{
+		position: relative;
+		left: 78px;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.R-3-5{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		padding-left: 60px;
+		text-indent: -60px;
+	}
+	.R-3-6{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		
+	}
+	.R-3-7{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		padding-left: 60px;
+		text-indent: -60px;
+	}
+	img.item{
+		height: 31px;
+		position: relative;
+		top: 0px;
+		left: 165px;
+	}
+	
+	li.R-5{
+		position: relative;
+		font-size: 11px;
+		left:15px;
+		margin-bottom: 10px;
+	}
+	/* R-6内部布局 */
+	
+	li.R-6-1{
+		float: left;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.R-6-2{
+		position: relative;
+		left: 30px;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.R-6-3{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+	}
+	.R-6-4{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		padding-left: 60px;
+		text-indent: -60px;
+	}
+	.R-6-5{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		padding-left: 60px;
+		text-indent: -60px;
+	}
+	.R-6-6{
+		position: relative;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		padding-left: 60px;
+		text-indent: -60px;
+	}
+	img.me{
+		height: 31px;
+		position: relative;
+		top: 0px;
+		left: 165px;
+	}
+	
+	li.R-8{
+		position: relative;
+		font-size: 11px;
+		left:15px;
+	}
+	/* R-9内部布局 */
+
+	.R-9{
+		position: relative;
+		top:5px;
+		left: 0px;
+		font-size: 12px;
+		margin-bottom: 5px;
+		line-height: 18px;
+	}
+	

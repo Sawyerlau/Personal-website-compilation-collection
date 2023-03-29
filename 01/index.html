@@ -1,0 +1,581 @@
+	<%@page contentType="text/html"%>
+	<%@page pageEncoding="UTF-8"%>
+	<!doctype html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--网页所使用的编码是utf-8-->
+	<meta charset="utf-8">
+		<!--网页关键字--><!--网页的关键字可以是多个，而不仅仅只是一个，必须用英文逗号隔开-->
+	<meta name="keywords" content="Sawyer_Lau的学习html日常"/>
+		<!--网页描述-->
+	<meta name="description" content=Sawyer_Lau的学习html日常/>
+		<!--本页作者-->
+	<meta name="author" content="Sawyer_Lau">
+		<!--版权声明-->
+	<meta name="copyright" content="本站所有教程均为绿叶学习网，版权所有，禁止转载。否则将追究法律责任。"/>
+		<!--定义页面所使用的语言-->
+
+		<!--<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>--><!--说明：这段代码在告诉浏览器，该页面所使用的字符集是gb2312，即国际汉字码。-->
+		<!--实现页面的自动刷新跳转-->
+	<meta http-equiv="refresh" content="-秒数-;url=../-网址-"/><!--"秒数"是一个整数，表示经过多少秒进行刷新跳转|"网址"是刷新跳转的地址-->
+	<meta http-equiv="refresh" content="60;url=http://www.baidu.com"/><!--这个页面60秒之后自动跳转到百度首页-->
+	<title>Sawyer_Lau的学习web前端分享</title>
+		
+	<!--head标签内部标签-->
+		<!--
+		<title>定义网页的标题
+		<meta>定义网页的基本信息（供搜索引擎）
+		<style>定义CSS样式
+		<link>链接外部CSS文件或脚本文件
+		<script>定义脚本语言
+		<base>定义页面所有链接的基础定位（用的很少）
+		-->
+		
+		<!--为了网站语义化，small标签也有一个比较大的用途，一般我们都是用来做网站的版权声明(一般放在head标签内)-->
+		<style type="text/css">#main {
+		padding: 10px;
+		border: 1px dashed gray;
+		margin: 100px auto;
+		display: inline-block;
+	}</style>
+	</head>
+
+	<body background="img/3.jpeg" ><hr/>
+		
+		<a href="download/index.txt" download="index.txt"><strong><u><span style="color: ">
+		<h1><font color=#FC0600>这</font><font color=#F90C00>个</font><font color=#F61200>页</font><font color=#F31800>面</font><font color=#F01E00>6</font><font color=#ED2400>0</font><font color=#EA2A00>秒</font><font color=#E73000>之</font><font color=#E43600>后</font><font color=#E13C00>自</font><font color=#DE4200>动</font><font color=#DB4800>跳</font><font color=#D84E00>转</font><font color=#D55400>到</font><font color=#D25A00>百</font><font color=#CF6000>度</font><font color=#CC6600>首</font><font color=#C96C00>页</font><font color=#C67200>，</font><font color=#C37800>可</font><font color=#C07E00>以</font><font color=#BD8400>键</font><font color=#BA8A00>入</font><font color=#B79000>c</font><font color=#B49600>t</font><font color=#B19C00>r</font><font color=#AEA200>l</font><font color=#ABA800>+</font><font color=#A8AE00>u</font><font color=#A5B400>来</font><font color=#A2BA00>查</font><font color=#9FC000>看</font><font color=#9CC600>源</font><font color=#99CC00>代</font><font color=#96D200>码</font><font color=#93D800>，</font><font color=#90DE00>谢</font><font color=#8DE400>谢</font><font color=#8AEA00>配</font><font color=#87F000>合</font></h1>
+		</span></u></strong><a/>
+		<a href="download/index.txt" download="index.txt">
+	<h1><font color=#FC0B04>》</font><font color=#F91608>》</font><font color=#F6210C>》</font><font color=#F32C10>》</font><font color=#F03714>》</font><font color=#ED4218>点</font><font color=#EA4D1C>击</font><font color=#E75820>彩</font><font color=#E46324>虹</font><font color=#E16E28>字</font><font color=#DE792C>即</font><font color=#DB8430>可</font><font color=#D88F34>直</font><font color=#D59A38>达</font><font color=#D2A53C>源</font><font color=#CFB040>代</font><font color=#CCBB44>码</font><font color=#C9C648>《</font><font color=#C6D14C>《</font><font color=#C3DC50>《</font><font color=#C0E754>《</font><font color=#BDF258>《</font><h1>
+			</a>
+		
+	<div id="timer" style="color:chartreuse"></div>
+	<script type="text/javascript"> 
+				var oBox= document.getElementById('timer');       
+				var maxtime = 1* 60;  
+				function CountDown() {
+					if (maxtime >= 0) {
+						minutes = Math.floor(maxtime / 60);
+						seconds = Math.floor(maxtime % 60);
+						msg = "距离自动跳转还有" + minutes + "分" + seconds + "秒";
+						oBox.innerHTML = msg;1
+						if (maxtime == 1 * 60)alert("还剩1分钟");
+									--maxtime;
+						} else{
+								clearInterval(timer);
+								alert("时间到，结束!");
+							}
+						}
+						timer = setInterval("CountDown()", 1000);                
+	</script>
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr/>
+		<h1>1</h1> <!--重要性最高|一级标签|一般一个页面只能有一个h1，h2~h6可以有多个--> <!--header简称-->
+		<h2>2</h2> <!--二级标签-->
+		<h3>3</h3> <!--三级标签-->
+		<h4>4</h4> <!--四级标签-->
+		<h5>5</h5> <!--五级标签-->
+		<h6>6</h6> <!--重要性最低|六级标签-->
+		<p>这个页面60秒之后自动跳转到百度首页，可以键入ctrl+u来查看源代码，谢谢配合</p> <!--可以使用段落标签p来标记一段文字-->
+		
+		
+		<!--换行标签-->
+			<!--br标签指的就是break-->
+			<p>床前明月光，疑是地上霜</p>	
+			<p>举头望明月，低头思故乡</p>	
+			<!--可以对比下上面和下面的区别，上面的话行与行之间是有间距的-->
+			<!--下面的话行与行之间是无间距的-->
+			<p>床前明月光，疑是地上霜<br/>举头望明月，低头思故乡</p>
+			<!--br标签一般用到给文字换行，而p标签一般用来给文字分段-->
+		
+		
+		<!--文本格式化标签-->
+			<!--粗体标签b、strong-->
+			<b>这是加粗文本</b>
+			<strong>这是加粗文本</strong>
+			<!--虽然这2种标签所使用的实际效果其实是相同的，但是在实际开发种，strong标签会比b标签更加具有语义性（虽然我也不太明白啥叫语义性）建议还是用strong标签-->
+			
+			<!--斜体标签i、cite、em-->
+			<i>斜体文本</i>
+			<cite>斜体文本</cite>
+			<em>斜体文本</em>
+			<!--作者建议还是多用em标签，因为其他2个标签用得极少-->
+		
+			<!--上下标标签-->
+				<!--上标标签sup-->
+				<p>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+		
+				<!--下标标签sub-->
+				<p>H<sub>2</sub>SO<sub>4</sub>指的是硫酸分子</p>
+			<!--记住了上标标签sup、下标标签sub，记得要把变换上下标的文本放在整个标签内哟-->
+			
+			<!--大字号标签big和小字号标签small-->
+				<p>普通字号文本</p>
+				<big>大字号文本</big>
+				<small>小字号文本</small>
+			<!--大字号标签和小字号标签一般在使用过程中很少使用，因为这2个标签都是纯样式标签，我们可以用CSS来控制字体大小-->
+			<!--为了网站语义化，small标签也有一个比较大的用途，一般我们都是用来做网站的版权声明(一般在head标签内要给定一个CSS标签用途，之后在body标签内要给定一个id)-->
+				<div id="main">
+					<small>
+						Copyright ©2015-2021 绿叶学习网（www.lvyestudy.com）,All Rights Reserved
+					</small>
+				</div>
+				
+			<!--删除线标签S-->
+				<p>新鲜的新西兰奇异果</p>
+				<p><s>原价：￥6.50/kg</s></p>
+				<p><strong>现在仅售：￥4.00/kg</strong></p>
+			<!--一般在实际开发的时候删除线效果一般常见于商品标价中，像我们在天猫淘宝上经常能看到这个效果-->
+			<!--在我们学了CSS之后对于删除线的效果，一般采用"text-decoration:line-through"来实现，极少用s标签来实现-->
+		
+			<!--下划线标签u-->
+				<p><u>视觉化思考</u>能以独特而有效的方式，让你的心有更大的空间来解决问题。</p>
+			
+		<!--水平线标签-->
+			<!--在html中水平线标签就是<hr/>它是一个自闭合标签，hr指的就是horizon（水平线）-->
+				<h3>静夜思</h3>
+				<p>床前明月光，疑是地上霜</p>
+				<p>举头望明月，低头思故乡</p>
+				<hr/>
+				<h3>春晓</h3>
+				<p>春眠不觉晓，处处闻啼鸟</p>
+				<p>夜来风雨声，花落知多少</p>
+
+		<!--div标签-->
+			<!--div标签，主要用来为HTML文档内的大块内容提供结构和CSS样式控制|
+			div，即"division"（分区），用来划分一个区域。div标签又称为"间隔标签"。我们常见的"div+css"中的div，就是指我们现在学习的div标签|
+			div标签内可以放入body标签的任何内部标签：段落文字、表格、列表、图像等。-->
+				<!--这是第一首诗-->
+				<h3>静夜思</h3>
+				<p>床前明月光，疑是地上霜</p>
+				<p>举头望明月，低头思故乡</p>
+				<hr/>
+				<!--这是第二首诗-->
+				<h3>春晓</h3>
+				<p>春眠不觉晓，处处闻啼鸟</p>
+				<p>夜来风雨声，花落知多少</p>
+				<!--对于这段代码，我们发现这个HTML文档结构比较凌乱，接下来我们用下div标签来为这段代码划分区域-->
+				<!--这是第一首诗-->
+				<div>
+					<h3>静夜思</h3>    
+					<p>床前明月光，疑是地上霜</p>
+					<p>举头望明月，低头思故乡</p>
+				</div>
+				<hr/>
+				<!--这是第二首诗-->
+				<div>
+					<h3>春晓</h3>
+					<p>春眠不觉晓，处处闻啼鸟</p>
+					<p>夜来风雨声，花落知多少</p>
+				</div>
+				<!--虽然这2段代码在浏览器上显示的效果是相同的，但在源代码中是不一样的，在这里div代码会更加有逻辑性
+				此外，div标签可以用来包裹一大块内容，方便我们对这一块内容进行CSS样式控制，对于这一点，我们在CSS入门章节中将会学习。其实div的作用远远不止如此，对于我们初学者来说，现在不需要深入，先给大家留个印象，在后续的章节，我们会不断让大家去接触div标签，大家可以慢慢熟系和接触-->
+		<!--网页特殊符号-->
+			<!--网页中的空格-->
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<!--一般我们的p标签内是一般会首行缩进2个字的，所以我们为了要使得每一个段落首行缩进，就要在段落前加空格-->
+				<h3>爱莲说</h3>
+				<p>&nbsp;&nbsp;水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p>
+				<p>&nbsp;&nbsp;予谓菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。噫！菊之爱，陶后鲜有闻。莲之爱，同予者何人？牡丹之爱，宜乎众矣！</p>
+		
+			<!--特殊符号|名称|代码-->
+			<!--"|双引号（英文）|&quot;-->
+			<!--‘|左单引号|&lsquo;-->
+			<!--’|右单引号|&requo;-->
+			<!--×|乘号|&times;-->
+			<!--÷|除号|&divide;-->
+			<!--＜|小于号|&lt;-->
+			<!--＞|大于号|-->
+			<!--&|与符号|&gt;-->
+			<!--—|长破折号|&mdash;-->
+			<!--||竖线|&#124;-->
+				<p>€欧元符号:&euro;</p>
+				<p>£英镑符号:&pound;</p>
+		<!--自闭合标签-->
+			<!--什么叫做自闭合标签-->
+				<!--1.标签一般分为一般标签和自闭合标签，一般标签的话一般都要开始符号和结束符号，可以在标签内插入其他标签或者文字
+					2.而自闭合标签由于没有结束符号。没办法在其内部插入其他标签或者文字，在使用的时候只能定义自身的一些属性-->
+			<!--常见的一些自闭合标签-->
+				<!--1.<meta/>定义页面的说明信息，供搜索引擎查看。
+					2.<link/>用于连接外部的CSS文件或者脚本文件。
+					3.<base/>定义页面所以链接的基础定位。
+					4.<br/>用于换行。
+					5.<hr/>为水平线。
+					6.<input/>用于定义表单元素。
+					7.<img/>为图像标签。                
+				-->
+		<!--块元素和行内元素-->
+			<!--常见块元素-->
+				<div></div>
+				<h1></h1> 
+				<h2></h2> 
+				<h3></h3> 
+				<h4></h4> 
+				<h5></h5> 
+				<h6></h6> 
+				<p></p>
+				<hr/>
+				<ol></ol>
+				<ul></ul>
+			<!--特点：独占一行，排斥与其他元素为同一行，包括块元素和行内元素，块元素内部可以容纳其块元素或者行内元素-->
+		
+			<!--行内元素-->
+				<strong>加粗强调</strong>
+				<em>斜体强调</em>
+				<s>删除线</s>
+				<u>下划线</u>
+				<a>超链接</a>
+				<span>常用行级</span>
+				<img><!--图片-->
+				<input><!--表单-->
+				
+			<!--2021/1/25 整理学习到书本53页，下一章是列表，明天可能比较忙可能没时间更新，还请大家见谅，谢谢支持-->
+			<!--2021/1/26继续更新-->
+
+		<!--列表常用有3种：有序列表、无序列表、定义列表-->
+			<!--有序列表-->
+				<!--简介-->
+				<ol>
+					<li>有序列表项</li>
+					<li>有序列表项</li>
+					<li>有序列表项</li>
+				</ol>
+				<!--ol 即ordered list（有序列表），li 即list item（列表项）-->
+				<!--在该语法中，<ol>和</ol>标志着有序列表的开始和结束，而<li>和</li>标签表示这是一个列表项。在有序列表中可以包含多个列表项-->
+				<!--注意！<ol>和<li>这2个标签是配合使用的，没有单独使用，而且<ol>标签内部不能存在任何其他的标签，一般情况下只能存在<li>标签（对于我们初学者来说，容易忽略嵌套列表）。这个点要多注意下，很容易犯错误-->
+				<!--type属性-->
+				<ol type="1"><!--数字1、2、3、-->
+				<ol type="a"><!--小写英文字母a、b、c、-->
+				<ol type="A"><!--大写英文字母A、B、C-->
+				<ol type="i"><!--小写罗马数字ⅰ、ⅱ、ⅲ-->
+				<ol type="I"><!--大写罗马数字Ⅰ、Ⅱ、Ⅲ-->
+			
+				
+			<!--无序列表-->
+				<!--简介-->
+				<ul>
+					<li>有序列表项</li>
+					<li>有序列表项</li>
+					<li>有序列表项</li>
+				</ul>
+				<!--ul 即unordered list（有序列表），li 即list item（列表项）-->
+				<!--在该语法中，<ul>和</ul>标志着无序列表的开始和结束，而<li>和</li>标签表示这是一个列表项。在无序列表中可以包含多个列表项-->
+				<!--注意！<ul>和<li>这2个标签是配合使用的，没有单独使用，而且<ul>标签内部不能存在任何其他的标签，一般情况下只能存在<li>标签（对于我们初学者来说，容易忽略嵌套列表）。这个点要多注意下，很容易犯错误-->
+				<!--type属性-->
+				<ul type="disc"><!--默认值，实心圆●-->
+				<ul type="circle"><!--空心圆⚪-->
+				<ul type="square"><!--实心正方形■-->
+					<!--跟有序列表一样，无序列表type属性实现的效果同样也可以使用CSS的list-style-type属性实现。作为初学者，我们可以先用一下type属性，到时候学了CSS入门教程后，我们直接摒弃type属性，而全部改用CSS控制样式-->
+				
+				<!--深入了解无序列表-->
+				<!--1.除了列表项的内容可以放在<ul></ul>中，其他无论是除了<li></li>标签外其他的标签都不能放在ul标签内、文字也不行，只能放在标签局域外-->
+				
+			
+			<!--定义列表-->
+				<!--dl即definition list（定义列表），dt 即definition list（定义名词）而dd即definition description（定义描述）理解标签语义更有利于你记忆，而记忆HTML标签的是HTML的基础-->
+				<!--<dl>标记和</dl>标记分别定义了定义列表的开始和结束，<dt>后面添加要解释的名词，而在<dd>后面则添加名词的具体解释-->
+				<!--举例：-->
+				<dl>
+					<dt>HTML
+						<dd>
+							制作网页的标准语言，控制网页的结构
+						</dd>
+					</dt>
+					
+					<dt>CSS
+						<dd>
+							层叠样式表，控制网页的样式
+						</dd>
+					</dt>
+					
+					<dt>JavaScript
+						<dd>
+							脚本语言，控制网页的行为
+						</dd>
+					</dt>
+				</dl>
+		<!--我们在学习html中要学会懂得每一个标签的对应使用，而不能说用相同效果不同标签来做代替，这样子就违背了学习html的本意，就好比，我们在处理一大段文字的时候，如果我们全部用div分区，在后期的维护和开发的时候是很困难的，因为你没办法知道到底是哪一部分出了问题，一眼望去都是同样的div标签-->
+		
+		
+		<!--表格-->
+			<!--简介-->
+				<!--表格在过去的web1.0时代，更多的是用在对网页的布局上，而在web2.0时代，表格已经基本上被摒弃了，现在使用的“DIV+CSS”模式-->
+			<!--表格的基本结构-->
+				<!--表格的基本标签有：table标签（表格）、tr标签（行）、td标签（单元格）。<tr>和<td>这2个标签都要在表格的开始标签<table>和结束标签</table>之间才有效-->
+				<!--语法-->
+				<tr>
+					<td>单元格1</td>
+					<td>单元格2</td>
+				</tr>
+				<tr>
+					<td>单元格1</td>
+					<td>单元格2</td>
+				</tr>
+				<!--tr即table row（表格行），td即table data cell（表格单元格）-->
+				<!--<table>和</table>标记着表格的开始和结束|<tr>和</tr>标记着行的开始和结束|<td>和</td>标记着单元格的开始和结束。在表格中包含几组<tr></tr>就表示该表格为几行-->
+				<!--举例-->
+				<table>
+					<tr>
+						<td>单元格1</td>
+						<td>单元格2</td>
+					</tr>
+					<tr>
+						<td>单元格3</td>
+						<td>单元格4</td>
+					</tr>
+				</table>
+				<!--在默认情况下，表格是没有边框的，对于表格的边框、背景色等，我们在CSS中会详细的讲解的-->
+			<!--表格完整结构-->
+				<!--表格标题caption-->
+					<table>x
+					<caption>表格标题</caption>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					</table>
+					<!--举例-->
+					<table>
+						<caption>考试成绩表</caption>
+						<tr>
+							<td>小明</td>
+							<td>80</td>
+							<td>80</td>
+							<td>80</td>
+						</tr>
+						<tr>
+							<td>小红</td>
+							<td>90</td>
+							<td>90</td>
+							<td>90</td>
+						</tr>
+						<tr>
+							<td>小杰</td>
+							<td>100</td>
+							<td>100</td>
+							<td>100</td>
+						</tr>
+					</table>
+					<!--默认情况下，表格是没有边框的。为表格添加边框，这是CSS的内容-->
+				<!--表头th-->
+					<table>
+						<caption>表格标题</caption>
+						<tr>
+							<th>表头单元格1</th>
+							<th>表头单元格2</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<!--举例-->
+					<table>
+						<caption>考试成绩表</caption>
+						<tr>
+							<th>姓名</th>
+							<th>语文</th>
+							<th>英语</th>
+							<th>数学</th>
+						</tr>
+						<tr>
+							<td>小明</td>
+							<td>80</td>
+							<td>80</td>
+							<td>80</td>
+						</tr>
+						<tr>
+							<td>小红</td>
+							<td>90</td>
+							<td>90</td>
+							<td>90</td>
+						</tr>
+						<tr>
+							<td>小杰</td>
+							<td>100</td>
+							<td>100</td>
+							<td>100</td>
+						</tr>
+					</table>
+			<!--表格语义化-->
+				<table>
+					<caption>表格标题</caption>
+					<!--表头-->
+					<thead>
+						<tr>
+							<th>表头单元格1</th>
+							<th>表头单元格2</th>
+						</tr>
+					</thead>
+					<!--表身-->
+					<tbody>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+					</tbody>
+					<!--表脚-->
+					<tfoot>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+					</tfoot>
+				</table>
+				<!--说明：thead、tbody和tfoot这三个标签也是表格中非常重要的标签，它在语义上区分了表头、表身、表脚。很多人容易忽略这三个标签。-->
+				<table>
+					<caption>考试成绩表</caption>
+					<thead>
+						<tr>
+							<th>姓名</th>
+							<th>语文</th>
+							<th>英语</th>
+							<th>数学</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>小明</td>
+							<td>80</td>
+							<td>80</td>
+							<td>80</td>
+						</tr>
+						<tr>
+							<td>小红</td>
+							<td>90</td>
+							<td>90</td>
+							<td>90</td>
+						</tr>
+						<tr>
+							<td>小杰</td>
+							<td>100</td>
+							<td>100</td>
+							<td>100</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>平均</td>
+							<td>90</td>
+							<td>90</td>
+							<td>90</td>
+						</tr>
+					</tfoot><!--页脚往往都是用于统计数据-->
+				</table>
+				<!--thead、tbody、tfoot三个标签的加入可以让你的表格更加有逻辑性-->
+			<!--合并行rowspan-->
+				<!--在设计表格中，有时候需要将2个或者更多的相邻单元格组合成一个单元格，类似word表格中的合并单元格。在html中这就需要用到合并行、合并列-->
+				<!--合并行使用td标签的rowspan属性，而合并列则用到td标签的colspan属性。-->
+				<td rowspan="跨度的行数"></td>
+				<table >
+					<!--第一行-->
+					<tr>
+						<td>姓名：</td>
+						<td>小明</td>
+					</tr>
+					<!--第二行-->
+					<tr>
+						<td rowspan="2">喜欢水果：</td>
+						<td>苹果</td>
+					</tr>
+					<!--第三行-->
+					<tr>
+						<td>香蕉</td>
+					</tr>
+				</table>
+			<!--合并列colspan-->
+				<td colspan="跨度的列数"></td>
+				<table>
+					<!--第一行-->
+					<tr>
+						<td colspan="2">绿叶学习网精品教程</td>
+					</tr>
+					<!--第二行-->
+					<tr>
+						<td>HTML教程</td>
+						<td>CSS教程</td>
+					</tr>
+					<!--第三行-->
+					<tr>
+						<td>jQuery教程</td>
+						<td>SEO教程</td>
+					</tr>
+				</table>
+				<table>
+					<caption>表格标题</caption>
+					<!--表头-->
+					<thead>
+						<tr>
+							<th>表头单元格1</th>
+							<th>表头单元格2</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+					</tbody>
+					<!--表脚-->
+					<tfoot>
+						<tr>
+							<td>标准单元格1</td>
+							<td>标准单元格2</td>
+						</tr>
+					</tfoot><!--页脚往往都是用于统计数据-->
+				</table>
+		<!--图像标签-->
+		<!--在html中，图像使用<img/>标签。img即image（图像）对于img标签，我们只需要掌握它的三个属性即可：src、alt、title-->
+		<!--src:说明|alt:图像显示不出来时的提示文字|title:鼠标移到图片上的提示文字-->
+			<!--img标签src属性-->
+				<img src="图像文件的路径"/>
+				<!--img标签是一个自闭合标签，没有结束标签，src属性用于设置图像文件所在的路径，这一路径可以是相对路径，也可以是绝对路径-->
+				<img src="img/1.jpg" />
+			<!--img标签alt属性-->
+				<!--alt属性用于设置图片的描述信息,这些信息是给搜索引擎看的,在搜索引擎优化(SEO)中,alt属性也是一个非常重要的属性.大家可以关注绿叶学习网的SEO入门教程,在这里无需深入了解alt属性-->
+			<!--img标签title属性-->
+			<!--title属性用于设置鼠标移到图片上的提示文字，这些提示文字是给用户看的-->
+			<!--语法-->
+				<img src="图片地址" alt="图片描述（给搜索引擎看的）" title="图片描述（给用户看）" />
+				<!--一般来讲，alt属性和title属性都可以设置成相同的，不互相影响-->
+		<!--相对路径和绝对路径-->
+		<!--更新到98页，明天继续更新-->
+	</body>
+	</html>
+
+		
+
+
+
+
+
+
+
+
+
+
+							
+
+
+
+
+
+

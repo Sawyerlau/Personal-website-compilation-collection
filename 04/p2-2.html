@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二回第二节：长生不老</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.body1{
+            width: 800px;
+            height: auto;
+            background-color: rgb(246,241,231) ;
+            margin: 0 auto;
+        }
+        p.title{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        li{
+            line-height: 37px;
+            font-size: 20px;
+            text-indent: 2em;
+            color: rgba(0,0,0,.9);
+            font-weight: 400;
+        }
+        div.worker{
+            width: auto;
+            height: 60px;
+        }
+        div.block{
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            color: gray;
+        }
+        div.block img{
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: -50px;
+            float: left;
+        }
+       div.conten{
+           width: 700px;
+           margin-left: 50px;
+       }
+       div.btns{
+           margin-top: 50px;
+           width: 800px;
+           text-align: center;
+           height: 200px;
+       }
+       div.btns button{
+           margin: 50px;
+           width: 100px;
+           height:50px;
+           border-radius: 10px;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="body1">
+        <p class="title">第二回第二节：长生不老</p>
+        <div class="worker">
+            <div class="block">
+                <img src="img/woker1.png" alt="">
+                <p>西游记</p>
+            </div>
+            <div class="block">
+                <img src="img/woker2.png" alt="">
+                <p>吴承恩</p>
+            </div>
+            <div class="block">
+                <img src="img/woker3.png" alt="">
+                <p>402字</p> 
+            </div>    
+          
+        </div>
+        <div class="conten">
+            <ul>
+                <li>当天悟空和众人，欢欢喜喜，在三星洞前玩耍，悟空一心只盼着早点天黑，终于到了黄昏，悟空与大家一起上床睡觉，他假装合眼，暗自留神。山里没有人敲鼓打更，悟空不知道睡到什么时候了，只能将鼻中的气息慢慢调匀。大约到了子时前后，他轻轻地爬起来，穿上衣服，偷偷地打开前门，躲开众人走到外面，抬头看看天上星星，正好将近三更时分</li>
+                <li>他抄旧路来到后门外面，只见那后门半开半掩，悟空大喜：“老师父果然要传道法给我，所以开着这后门呢。</li>
+                <li>悟空轻轻地走上前去，侧身进到门里，一直走到祖师的床前。只见祖师正卷曲着身子，朝里面睡着。悟空不敢惊动老师父，就跪在床榻之前。祖师睡了没多久，就醒来了，只见他张开双脚，口中说着：“难，难，难，道最玄，莫把金丹作等闲。不遇至人传妙诀，空言口困舌头干。“</li>
+                <li>悟空应声回答：“师父，弟子在这里跪着等侯很久了。”</li>
+                <li>祖师听得是悟空的声音，就披衣盘坐在床上，喝道：“这猢狲，晚上你不去睡觉，却跑到我这里来做什么？“</li>
+            </ul>
+        </div>
+        <div class="btns">
+        <button class="list">前往目录</button>
+         <button class="next">前往下一回</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var list = document.querySelector(".list");
+    var next = document.querySelector(".next");
+
+    list.onclick = function(){
+        window.open('index.html','_self','')
+    }
+
+    next.onclick = function(){
+        window.open('p3-1.html','_self','')
+    }
+</script>
+</html>

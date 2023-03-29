@@ -1,0 +1,41 @@
+.submit{
+    width: 445px;
+    height: 150px;
+    background-color:rgb(234,236,243);
+    margin: 0 auto;
+    border-radius: 20px;
+    animation-name: example;
+    animation-duration: 1s;
+    overflow: hidden;
+}
+
+.submit ul li{
+    display: block;
+    width: 80px;
+    height: 65px;
+    float: left;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-left: 25px;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 65px;
+    text-align: center;
+    color: rgb(40, 49,85);
+    
+    }
+.submit ul li:hover{
+    color: white;
+    background-color: rgb(255,182,52);
+    transition: .3s;
+}
+.thank{
+    margin: 0px auto;
+    text-align: center;
+    line-height: 150px;
+    width: 445px;
+    height: 150px;
+    /* background-color: aqua; */
+    font-size: 30px;
+    letter-spacing:5px
+}

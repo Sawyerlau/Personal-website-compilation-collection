@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        /* 背景色 */
+        body{
+            background-color: rgba(0,0,0,0.2);
+        }
+        /* 主界面 */
+        .item{
+            width: 510px;
+            height: 345px;
+            background-color: white;
+            margin: 100px auto;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* 标题，当账号或者密码获取焦点时，这个title会变蓝色 */
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px auto;
+            position: absolute;
+            left: 215px;
+            top: 35px;
+        }
+        /* 输入主体 */
+        .center{
+            width: 423px;
+            height: 86px;
+            position: absolute;
+            left: 43px;
+            top: 90px;
+        }
+        /* 注册按钮的div标签 */
+        .register{
+           
+            position: absolute;
+            left: 43px;
+            top: 200px;
+        }
+        /* 注册按钮 */
+        .register button{
+            width: 190px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px #e7e7e7 solid;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        /* 登录按钮的div标签 */
+        .login{
+            right: 43px;
+            top: 200px;
+            position: absolute;
+        }
+        /* 登录按钮 */
+        .login button{
+            background-color: #00a1d6;
+            width: 190px;
+            height: 40px;
+            border: 0px;
+            border-radius: 10px;
+            font-size: 14px;
+            color: white;
+        }
+        /* 输入主体内的账号input标签 */
+        .item .center .text{
+            width: 363px;
+            height: 43px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border: 1px solid #e7e7e7;
+            border-bottom: 0px;
+            padding-left: 60px;
+            font-size: 14px;
+            margin-bottom: 1px;
+        }
+        /* 输入主体内的密码input标签在获取焦点的时候边框的颜色变化 */
+        .item .center .text:focus{ 
+            outline: 1px solid #00a1d6;
+        }
+        /* 输入主体内的密码input标签 */
+        .item .center .password{
+            width: 363px;
+            height: 43px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1px solid #e7e7e7;
+            padding-left: 60px;
+            font-size: 14px;
+        }
+        /* 调整小眼睛的位置 */
+        .item .center .password::-ms-reveal{
+            margin-right: 110px;
+        }
+        /* 输入主体内的密码input标签在获取焦点的时候边框的颜色变化 */
+        .item .center .password:focus{ 
+            outline: 1px solid #00a1d6;
+        }
+        /* “账号” */
+        .item .center .username{
+            position: absolute;
+            left: 20px;
+            top: 13px;
+            font-size: 14px;
+        }
+        /* “密码”*/
+        .item .center .passwd{
+            position: absolute;
+            left: 20px;
+            top: 57px;
+            font-size: 14px;
+        }
+        .forget{
+            position: absolute;
+            left: 330px;
+            color: #00a1d6;
+            top: 57px;
+        }
+        .item .pic {
+            width: 90px;
+            height: 90px;
+            margin-top: 255px;
+            margin-left: 420px;
+            background-image: url("img/before.png");
+            background-position: center center;
+            background-size: 90px;
+            transition: .3s;
+        }
+       .tip{
+            width: 250px;
+            height: 14px;
+            font-size: 14px;
+            position: absolute;
+            left: 125px;
+            top: 183px;
+            color: red;
+       }
+       .tipp{
+            width: 250px;
+            height: 14px;
+            font-size: 14px;
+            left: 125px;
+            top: 110px;
+            line-height: 14px;
+            text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="item">
+        <p class="title">密码登录</p>
+        <div class="center">
+            <input type="text" class="text" placeholder="请输入账号">
+            <p class="username">账号</p>
+            <input type="password" class="password" placeholder="请输入密码">
+            <p class="passwd">密码</p>
+            <a href="./passwd.html" class="forget">忘记密码?</a>
+        </div>
+        <div class="tip">
+            <p class="tipp"></p>
+        </div>
+        <div class="register">
+            <button>注册</button>
+        </div>
+        <div class="login">
+            <button class="submit">登录</button>
+        </div>
+        <div class="pic">
+            
+        </div>
+    </div>
+</body>
+<script>
+    // 基础页面布局
+    var passwd = document.querySelector(".password")
+    var pic = document.querySelector(".pic")
+    var ipts =document.querySelectorAll(".item .center input")
+    var submit = document.querySelector(".submit")
+    var text = document.querySelector(".text")
+    var tip = document.querySelector(".tipp")
+    for(var i=0;i<ipts.length;i++){
+        ipts[i].index=i;
+        var x = 0;
+        ipts[i].onclick=function(){
+            var x =this.index;
+        
+        switch(x){
+            case 0:
+                pic.style.backgroundImage= "url('img/before.png')";
+                console.log(x)
+                break;
+            default:
+                pic.style.backgroundImage="url('img/after.png')";
+                console.log(x)
+                break;
+        }
+        }
+        
+    }
+    //逻辑校验
+    submit.onclick=function(){
+        if((text.value!=="root")||(passwd.value.length<4 || passwd.value!=="root")){
+            passwd.style.backgroundColor="rgb(255,110,117)";//字符数小于4的时候或者密码不是root的时候拒绝接入//还有一个判定就是，如果账户不是root那也无法接入
+            text.style.backgroundColor="rgb(255,110,117)";
+            tip.innerText="请输入正确的账号和密码";
+        }else{
+            passwd.style.backgroundColor="rgb(241,245,191)";//否则可以接入
+            text.style.backgroundColor="rgb(241,245,191)";
+            tip.style.color="#00a1d6";
+            tip.innerText="欢迎光临哔哩哔哩乾杯[]~(￣▽￣)~*";
+            window.open("https://www.bilibili.com","_self","","");
+        }    
+    } 
+</script>
+</html>

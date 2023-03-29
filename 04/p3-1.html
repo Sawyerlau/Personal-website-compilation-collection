@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三回第一节：傲来国偷兵器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div.body1{
+            width: 800px;
+            height: auto;
+            background-color: rgb(246,241,231) ;
+            margin: 0 auto;
+        }
+        p.title{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+        li{
+            line-height: 37px;
+            font-size: 20px;
+            text-indent: 2em;
+            color: rgba(0,0,0,.9);
+            font-weight: 400;
+        }
+        div.worker{
+            width: auto;
+            height: 60px;
+        }
+        div.block{
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+            color: gray;
+        }
+        div.block img{
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: -50px;
+            float: left;
+        }
+       div.conten{
+           width: 700px;
+           margin-left: 50px;
+       }
+       div.btns{
+           margin-top: 50px;
+           width: 800px;
+           text-align: center;
+           height: 200px;
+       }
+       div.btns button{
+           margin: 50px;
+           width: 100px;
+           height:50px;
+           border-radius: 10px;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="body1">
+        <p class="title">第三回第一节：傲来国偷兵器</p>
+        <div class="worker">
+            <div class="block">
+                <img src="img/woker1.png" alt="">
+                <p>西游记</p>
+            </div>
+            <div class="block">
+                <img src="img/woker2.png" alt="">
+                <p>吴承恩</p>
+            </div>
+            <div class="block">
+                <img src="img/woker3.png" alt="">
+                <p>342字</p> 
+            </div>    
+          
+        </div>
+        <div class="conten">
+            <ul>
+                <li>美猴王学会了长生不老的法术，荣归故里，自从剿灭了混世魔王，夺了那一口大钢刀。每天都在花果山操练武艺，他教小猴子们砍下竹子做标枪，削掉木头做大刀，整治旗幡，设立岗哨，前前后后，扎下营寨，带领儿孙们玩耍。</li>
+                <li>忽然有一天猴王在休息的地方对小猴们说：“我们在这里日夜操练，恐怕他人当了真，或者惊动了人间帝王，或者惊动山里禽王、兽王，他们就以此为由，说我们聚众造反，大举率兵来攻杀我们。你们所用的都是竹竿木刀，如何能够抵挡？必须得有锋利的剑戟才行，这叫我们如何是好？”</li>
+                <li>猴子们一听，都十分惊恐：“大王思虑长远，只是没有地方去取这些剑戟？”</li>
+                <li>正说着，突然从猴群中转出了四个老猴，两个是赤尻马猴，两个是通背猿猴，四个老猴走上前来说：“大王，如果要整治锋利器械，容易得很。”</li>
+                <li>悟空疑惑地问：“怎么见得很容易？”</li>
+            </ul>
+        </div>
+        <div class="btns">
+        <button class="list">前往目录</button>
+         <button class="next">前往下一节</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var list = document.querySelector(".list");
+    var next = document.querySelector(".next");
+
+    list.onclick = function(){
+        window.open('index.html','_self','')
+    }
+
+    next.onclick = function(){
+        window.open('p3-2.html','_self','')
+    }
+</script>
+</html>

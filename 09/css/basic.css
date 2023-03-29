@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color:white;
+}
+.item{
+    border-radius: 20px;
+    width: 445px;
+    height: 600px;
+    background-color:rgb(234,236,243);
+    margin: 20px auto;
+    position: relative;
+    font-size: 22px;
+    box-shadow: 1px 1px rgb(178,182,194);
+    transition: 1s;
+    animation-name: example;
+    animation-duration: 1s;
+    
+}
+@keyframes example {
+    0%{
+        margin: 0px auto;
+        opacity: 10%;
+    }
+    100%{
+        margin: 20px auto;
+        opacity: 100%;
+    }
+}
+
+.item>div{
+    box-shadow: 1px 1px rgb(178,182,194);
+}
+.display{
+    border: 1px rgb(234,236,243) solid;
+    border-radius: 20px;
+    width: 395px;
+    height: 100px;
+    background-color:white;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    overflow: hidden;
+}
+p{
+    border-radius: 20px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(40, 49,85);
+   
+}
+
+/* 第一行 */
+div.button :nth-child(1){
+    margin-left: 25px;
+    margin-top: 150px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(2){
+    margin-left: 25px;
+    margin-top: 150px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(3){
+    margin-left: 25px;
+    margin-top: 150px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(4){
+    margin: 150px 25px 5px 25px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(255,182,52);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: white;
+}
+/* 第二行 */
+div.button :nth-child(5){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(6){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(7){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(8){
+    margin: 15px 25px 5px 25px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+/* 第三行 */
+div.button :nth-child(9){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+}
+div.button :nth-child(10){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(11){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(12){
+    margin: 15px 25px 5px 25px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+/* 第四行 */
+div.button :nth-child(13){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(14){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(15){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(16){
+    margin: 15px 25px 5px 25px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+/* 第五行 */
+div.button :nth-child(17){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(18){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+div.button :nth-child(19){
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(29,110,242);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: white;
+}
+div.button :nth-child(20){
+    margin: 15px 25px 5px 25px;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(223,225,236);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 65px;
+    float: left;
+    color: rgb(40, 49,85)
+}
+.item .button div:active{
+    background-color: #CFD2E0;
+}
+.item .button div:hover{
+    border-radius: 50px;
+}

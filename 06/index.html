@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭收支记账软件实验</title>
+    <script>
+        var n = 0;
+        var initMoney = 10000;
+        var totalMoney = initMoney;
+        var menu = '\n--------------------家庭收支记账软件------------------------\n\n\t\t\t1 收支明细\n\n\t\t\t2 登记收入\n\n\t\t\t3 登记支出\n\n\t\t\t4 退    出\n----------------------------------------------------------\n请输入功能(选择1-4)：\n';
+        var detailstr = '\n--------------------当前收支明细记录----------------------\n序号\t收支\t账户金额\t\t收支金额\t\t说明\n\n';
+        var detailline = '---------------------------------------------------------\n';
+        console.log(menu);
+        while(true){
+            var funcSelect = prompt('请输入功能(选择1-4)：');
+            if(funcSelect == '1'){
+                // 打印账本明细
+                if(detailstr.length==74){
+                console.log('\n您的账本还没明细，赶紧去记录吧！\n');
+            }
+            else{
+                console.log(detailstr + detailline);
+                }
+            }
+            else if(funcSelect == '2'){
+                // 录入收入金额
+                var incomeMoney = prompt('本次收入金额(元)：');
+                    while(true){
+                        if(isNaN(parseFloat(incomeMoney))){
+                        incomeMoney = prompt('提示：金额是数值型。\n\n请输入本次收入金额(元)：');
+                    }
+                        else{
+                            break
+                        }
+                    };
+                var incomeRemarks = prompt('本次收入说明：');
+                if(incomeRemarks.length==0){
+                        incomeRemarks = '未记录';
+                    }
+                totalMoney = totalMoney + parseFloat(incomeMoney);
+                n = n + 1;
+                var incomestr = String(n) + '\t' + '收入' + '\t' + String(totalMoney) + '\t\t' + String(incomeMoney) + '\t\t' + incomeRemarks + '\n\n';
+                detailstr = detailstr + incomestr;
+                console.log('收入金额录入成功，本次收入金额 ' + incomeMoney + ' 元,原因：' + incomeRemarks + '。谢谢！\n');
+            }
+            else if(funcSelect == '3'){
+                // 录入支出金额
+                var outcomeMoney = prompt('本次支出金额(元)：');
+                    while(true){
+                        if(isNaN(parseFloat(outcomeMoney))){
+                            outcomeMoney = prompt('提示：金额是数值型。\n\n请输入本次收入金额(元)：');
+                    }
+                        else{
+                            break
+                        }
+                    };
+                var outcomeRemarks = prompt('本次支出说明：');
+                if(outcomeRemarks.length==0){
+                    outcomeRemarks = '未记录';
+                    }
+                totalMoney = totalMoney + parseFloat(outcomeMoney);
+                n = n + 1;
+                var outcomestr = String(n) + '\t' + '收入' + '\t' + String(totalMoney) + '\t\t' + String(outcomeMoney) + '\t\t' + outcomeRemarks + '\n\n';
+                detailstr = detailstr + outcomestr;
+                console.log('支出金额录入成功，本次支出金额 ' + outcomeMoney + ' 元,原因：' + outcomeRemarks + '。谢谢！\n');
+            }
+            else if(funcSelect == '4'){
+                // 退出系统
+                    var comfire = prompt('确认是否退出(Y/N)：').toLowerCase();
+                    if(comfire == 'y'){
+                        alert('再见，欢迎下次继续使用，谢谢！\n');
+                        console.log('再见，欢迎下次继续使用，谢谢！\n');
+                        break
+                }
+                else{
+                    console.log('\n');
+                }
+            }
+            else{
+                // 输入错误，提醒重新输入
+                console.log('输入有误，请输入功能(选择1-4)：');
+            }
+        };
+    
+    </script>
+</head>
+<body>
+    
+</body>
+
+</html>

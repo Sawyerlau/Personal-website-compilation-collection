@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+   <link rel="stylesheet" href="css/basic.css">
+   <link rel="stylesheet" href="css/submit.css">
+</head>
+<body>
+    <div class="item">
+        <div class="display">
+            <p>0</p>
+        </div>
+        <div class="button">
+            <!-- 一 -->
+            <div class="C">
+                C
+            </div>
+            <div class="CE">
+                CE
+            </div>
+            <div class="DEL">
+                DEL
+            </div>
+            <div class="AC">
+                AC
+            </div>
+            <!-- 二 -->
+            <div class="7">
+                7
+            </div>
+            <div class="8">
+                8
+            </div>
+            <div class="9">
+                9
+            </div>
+            <div class="+">
+                +
+            </div>
+            <!-- 三 -->
+            <div class="4">
+                4
+            </div>
+            <div class="5">
+                5
+            </div>
+            <div class="6">
+                6
+            </div>
+            <div class="-">
+                -
+            </div>
+            <!-- 四 -->
+            <div class="1">
+                1
+            </div>
+            <div class="2">
+                2
+            </div>
+            <div class="3">
+                3
+            </div>
+            <div class="*">
+                *
+            </div>
+            <!-- 五 -->
+            <div class=".">
+                .
+            </div>
+            <div class="0">
+                0
+            </div>
+            <div class="=">
+                =
+            </div>
+            <div class="/">
+                /
+            </div>
+        </div>
+    </div>
+    <div class="submit">
+        <ul>
+            <li>推荐</li>
+            <li>很好</li>
+            <li>一般</li>
+            <li>不行</li>
+        </ul>
+    </div>
+    
+</body>
+<script src="./js/index.js"></script>
+<script>
+    var lis = document.querySelectorAll("li")
+    var ul = document.querySelector("ul")
+    for(var r=0;r<lis.length;r++){
+        console.log(lis[r])
+        lis[r].onclick=function(){
+            ul.innerHTML=` <div class="thank">
+                谢谢！
+    </div>`
+        }
+    }
+</script>
+</html>
