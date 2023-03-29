@@ -1,0 +1,697 @@
+.video img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+div.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video .text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.video .text p:nth-child(1) {
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin-top: -100px;
+}
+
+.video .text p:nth-child(2) {
+    margin-top: 30px;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+@keyframes downimggif {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+
+}
+
+/* 用于设置下滑引导图示 */
+.down {
+    margin-top: -93px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+div.down img:nth-child(1) {
+
+    width: 100px;
+    margin-top: -100px;
+    animation: downimggif 1s infinite alternate;
+
+}
+
+div.down img:nth-child(2) {
+
+    width: 100px;
+    margin-top: -100px;
+    animation: downimggif 1s infinite alternate;
+    animation-delay: 0.4s;
+}
+
+div.down img:nth-child(3) {
+
+    width: 100px;
+    margin-top: -100px;
+    animation: downimggif 1s infinite alternate;
+    animation-delay: 0.8s;
+}
+
+
+
+/* 放index页面的样式表 */
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    height: 500px;
+    position: relative;
+}
+
+/* banner图 */
+.banner .wrapper ul {
+    width: 1240px;
+    height: 500px;
+    /* background-color: pink; */
+}
+
+/* banner CSDN教学 */
+.banner .wrapper .container {
+    position: relative;
+    overflow: hidden;
+    /* width: 1240px; */
+    height: 500px;
+}
+
+.banner .wrapper .container .swiper {
+    width: 1240px;
+    height: 500px;
+    position: absolute;
+    left: -1240px;
+    white-space: nowrap;
+}
+
+.banner .wrapper .container .swiper img {
+    width: 1240px;
+    display: inline-block;
+}
+
+
+.banner .wrapper .dots {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .wrapper .dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.banner .wrapper .dots .checked {
+    background-color: skyblue;
+}
+
+
+/* banner 箭头 */
+.prev,
+.next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    background-image: url(../image/sprites.png);
+}
+
+.prev {
+    left: 10px;
+    background-position: 14px -60px;
+}
+
+/* 背景图位置负责2件事，改变箭头在盒子里面的位置，改变精灵图的位置
+导致在精灵图中测量的尺寸不准确 */
+/* 解决方案2种
+1、书写背景图位置属性，借助谷歌的调试工具调试具体的位置数值
+2、书写标签的时候，a负责盒子，里面再添加一共span负责箭头 */
+
+.next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+/* 圆点 */
+.banner .wrapper ol {
+    height: 10px;
+    position: absolute;
+    left: 580px;
+    bottom: 31px;
+}
+
+.banner .wrapper ol li {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.43);
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.banner .wrapper ol li.current {
+    background-color: rgba(255, 255, 255);
+}
+
+/* flow 流程 */
+.flow {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 180px;
+}
+
+.flow .content ul {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flow .content ul li {
+    width: 160px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.flow .content ul li a {
+    border-radius: 10px;
+    width: 160px;
+    height: 130px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+}
+
+/* 用来模拟当用户hover之后的阴影弹出 */
+.flow .content ul li a:hover {
+    box-shadow: 0px 3px 26px 1px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.flow .content ul li span:nth-child(2) {
+    font-size: 14px;
+    color: #727370;
+}
+
+.flow .content ul li span:nth-child(3) {
+    font-size: 12px;
+    color: #bfc8c6;
+}
+
+.flow .content ul b.icon-next {
+    color: #c9c9c9;
+    font-size: 25px;
+}
+
+.flow .content ul li a b {
+    font-size: 40px;
+}
+
+
+
+.flow .content ul li span {
+    display: block;
+    text-align: center;
+}
+
+/* 服务推荐 */
+
+.recommend .wrapper .hd,
+.superiority .wrapper .hd,
+.strategy .wrapper .hd,
+.core .wrapper .hd,
+.partner .wrapper .hd,
+.ursing .wrapper .hd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+    align-items: center;
+}
+
+.recommend .wrapper .hd h2,
+.superiority .wrapper .hd h2,
+.strategy .wrapper .hd h2,
+.core .wrapper .hd h2,
+.partner .wrapper .hd h2,
+.ursing .wrapper .hd h2 {
+    font-size: 40px;
+}
+
+.recommend .wrapper .hd h2 span,
+.superiority .wrapper .hd h2 span,
+.strategy .wrapper .hd h2 span,
+.core .wrapper .hd h2 span,
+.partner .wrapper .hd h2 span,
+.ursing .wrapper .hd h2 span {
+    color: #bfc8c6;
+    font-weight: 100;
+}
+
+.recommend .wrapper .hd h3,
+.superiority .wrapper .hd h3,
+.strategy .wrapper .hd h3,
+.partner .wrapper .hd h3,
+.ursing .wrapper .hd h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727370;
+}
+
+/* 此部分负责编辑图片展示 */
+
+
+
+/* 服务推荐 */
+
+.recommend .wrapper .bd .top ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recommend .wrapper .bd .top ul li {
+    transition: 1s;
+}
+
+.recommend .wrapper .bd .top ul li:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    background-image: url(../image/recommend01.jpg);
+    background-size: cover;
+}
+
+.recommend .wrapper .bd .top ul li:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background-image: url(../image/recommend02.jpg);
+    background-size: cover;
+}
+
+.recommend .wrapper .bd .top ul li:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background-image: url(../image/recommend03.jpg);
+    background-size: cover;
+}
+
+.recommend .wrapper .bd .top ul li:nth-child(4) {
+    width: 200px;
+    height: 200px;
+    background-image: url(../image/recommend04.jpg);
+    background-size: cover;
+}
+
+.recommend .wrapper .bd .bottom ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recommend .wrapper .bd .bottom ul li {
+    height: 60px;
+    line-height: 60px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.recommend .wrapper .bd .bottom {
+    height: 100px;
+}
+
+/* 项目特色 */
+.strategy,
+.core {
+    background-color: #f7f7f7;
+}
+
+.strategy .wrapper .bd ul,
+.core .wrapper .bd ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.strategy .wrapper .bd ul li,
+.core .wrapper .bd ul li {
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .6s;
+}
+
+
+.strategy .wrapper .bd ul li:nth-child(1),
+.core .wrapper .bd ul li:nth-child(1) {
+    background-color: #f29437;
+    /* 默认第一个选中 */
+}
+
+
+
+/* 设置第一个li的布局 */
+
+.strategy .wrapper .bd .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(#fff, #f4f4f5);
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+/* 设置核心服务的主体内容li的布局 */
+
+.core .wrapper .bd .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 600px;
+    /* background: linear-gradient(#fff, #f4f4f5); */
+    /* 渐变 */
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.core .wrapper .bd .content img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+/* 平台优势 */
+
+.superiority {
+    background-color: #fff;
+    height: 400px;
+}
+
+.superiority .wrapper .bd ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.superiority .wrapper .bd ul li b {
+    font-size: 60px;
+    transition: .3s;
+}
+
+.superiority .wrapper .bd ul li span {
+    transition: .3s;
+}
+
+.superiority .wrapper .bd ul li {
+    height: 175px;
+    width: 270px;
+    background-color: #f4f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.superiority .wrapper .bd ul li:hover {
+    box-shadow: 0px 6px 26px 0px rgba(0, 0, 0, 0.1), 0px 12px 13px -3px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f5;
+}
+
+.superiority .wrapper .bd ul li:hover b {
+    font-size: 70px;
+    color: #f29437;
+}
+
+.srollTop {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    right: 100px;
+    bottom: 110px;
+    border-radius: 20px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    transition: .3s;
+    box-shadow: 0px 3px 26px 1px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.srollTop:hover {
+    background-color: #f29437;
+}
+
+.ursing {
+    background-color: #f7f7f7;
+    /* height: 1500px;   */
+}
+
+/* 护工团队 */
+.ursing .wrapper .bd .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ursing .wrapper .bd .content .left {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ursing .wrapper .bd .content .left img {
+    width: 340px;
+}
+
+.ursing .wrapper .bd .content .right {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ursing .wrapper .bd .content .right ul {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.ursing .wrapper .bd .content .right ul li:nth-child(1) {
+    font-size: 50px;
+}
+
+.ursing .wrapper .bd .content .right ul li:nth-child(2) {
+    font-size: 30px;
+}
+
+.ursing .wrapper .bd .content .right ul li:nth-child(3) {
+    font-size: 30px;
+}
+
+.ursing .wrapper .bd .content .right ul li:nth-child(4) {
+    font-size: 30px;
+}
+
+/* 我们的服务 */
+.service {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    padding: 50px 0px 100px;
+    margin-top: 100px;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 2em;
+    margin-top: 10px;
+}
+
+.service .hd h2 span.icon-fuwu {
+    font-size: 40px;
+    vertical-align: top;
+    color: #333;
+}
+
+.service .hd h2 {
+    font-size: 40px;
+}
+
+.partner {
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+.partner .bd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.partner .wrapper .bd h3 {
+    height: 50px;
+    padding: 0px 10px;
+    line-height: 50px;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+.partner .wrapper .bd ul {
+    width: 1240px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    border-radius: 10px;
+    box-shadow: 0px 3px 26px 1px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+
+.partner .wrapper .bd ul li {
+    width: 220px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner .wrapper .bd ul li:hover {
+    box-shadow: 0px 3px 26px 1px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    scale: 1.05;
+}
+
+.partner .wrapper .bd ul li:hover img {
+    scale: 1.05;
+}
+
+.partner .wrapper .bd ul li img {
+    width: 150px;
+}
+
+
+
+.partner .wrapper .bd .push {
+    width: 500px;
+    height: 100px;
+    background-color: #f7f7f7;
+    margin-top: 100px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0px 130px;
+
+    transition: .3s;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.partner .wrapper .bd .push:hover {
+    color: #f29437;
+    font-weight: 700;
+    box-shadow: 0px 3px 26px 1px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

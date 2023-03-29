@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颐养—便捷、智慧、安心！</title>
+    <!-- 按顺序引入 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 外链的样式表也是满足后来者居上 -->
+    <meta name="description" content="顾养养老服务平台官网，致力于打造智能化养老服务平台。">
+    <meta name="keywords" content="顾养,养老,智能,健康,社交,规划,保障">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./download/iconfont.css">
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <!-- <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">请先登录</a></li>
+                <li><a href="#">免费注册</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">会员中心</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">在线客服</a></li>
+                <li><a href="#"><span></span>长者版</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- 右侧aside -->
+    <div class="rightAside">
+        <ul>
+            <li>
+                <a href="#">
+                    <b class="iconfont icon-zhuce"></b>
+                    <span>立即注册</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <b class="iconfont icon-denglu"></b>
+                    <span>在线登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <b class="iconfont icon-dingdan"></b>
+                    <span>我的订单</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <b class="iconfont icon-dianhua"></b>
+                    <span>电话咨询</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <b class="iconfont icon-kefu"></b>
+                    <span>在线客服</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="#">颐养</a></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="navli">
+                    <a href="#">首页</a>
+
+                </li>
+                <li class="navli">
+                    <a href="#">关于我们</a>
+                    <ol>
+                        <li>公司简介</li>
+                        <li>公司使命</li>
+                        <li>公司历程</li>
+                        <li>荣誉资质</li>
+                        <li>管理团队</li>
+                    </ol>
+                </li>
+                <li class="navli"><a href="#">业务概览</a>
+                    <ol>
+                        <li>业务架构
+                        </li>
+                        <li>服务交易
+                        </li>
+                        <li>投资联营
+                        </li>
+                        <li>资源配套</li>
+                        <li>护工团队</li>
+                    </ol>
+                </li>
+                <li class="navli"><a href="#">合作伙伴</a>
+                    <ol>
+                        <li>生活照料</li>
+                        <li>医疗护理</li>
+                        <li>紧急求助</li>
+                        <li>精神慰藉</li>
+                    </ol>
+                </li>
+                <li class="navli"><a href="#">社会责任</a>
+                    <ol>
+                        <li>留守关怀</li>
+                        <li>公益慈善</li>
+                        <li>爱心传递</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="搜一搜">
+            <span></span>
+        </div>
+
+    </div>
+
+    <!-- video -->
+    <div class="video ">
+        <img src="./image/back.jpg" alt="">
+        <div class="text">
+            <p>链接养老资源 提升服务效率</p>
+            <p>养老全产业供应链综合服务平台</p>
+        </div>
+    </div>
+    <div class="down">
+        <img src="./image/down1.webp" alt="">
+        <img src="./image/down1.webp" alt="">
+        <img src="./image/down1.webp" alt="">
+
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="container">
+                <div class="swiper">
+                    <img src="./image/banner4.webp" alt=""><img src="./image/banner1.webp" alt=""><img
+                        src="./image/banner2.webp" alt=""><img src="./image/banner3.webp" alt=""><img
+                        src="./image/banner4.webp" alt=""><img src="./image/banner1.webp" alt="">
+                </div>
+            </div>
+
+            <!-- 箭头按钮 -->
+            <!-- prev:上一个 -->
+            <b href="#" class="prev" onclick="perv()" style="cursor:pointer"></b>
+            <!-- next:下一个 -->
+            <b href="#" class="next" onclick="next()" style="cursor:pointer"></b>
+
+            <!-- 显示点 -->
+            <div class="dots">
+                <div class="dot checked"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+    <!-- flow流程 -->
+    <div class="flow">
+        <div class="content wrapper">
+            <ul>
+                <li><a href="#">
+                        <b class="iconfont icon-zaixianzixun "></b>
+                        <span>在线咨询</span>
+                        <span>7X24小时咨询</span>
+                    </a></li>
+                <b class="iconfont icon-next"></b>
+                <li><a href="#">
+                        <b class="iconfont icon-dengji "></b>
+                        <span>上门登记</span>
+                        <span>专业养老咨询员上门登记</span>
+                    </a></li>
+                <b class="iconfont icon-next"></b>
+                <li><a href="#">
+                        <b class="iconfont icon-dingzhi "></b>
+                        <span>专人定制</span>
+                        <span>量身定制养老服务</span>
+                    </a></li>
+                <b class="iconfont icon-next"></b>
+                <li><a href="#">
+                        <b class="iconfont icon-yanglao "></b>
+                        <span>开始服务</span>
+                        <span>一对一服务，效果好</span>
+                    </a></li>
+                <b class="iconfont icon-next"></b>
+                <li><a href="#">
+                        <b class="iconfont icon-shouhou"></b>
+                        <span>售后保障</span>
+                        <span>超长售后，服务有保障</span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 服务推荐 -->
+    <div class="recommend">
+        <div class="wrapper">
+            <div class="hd">
+                <h2><span>----- </span>服务推荐<span> -----</span></h2>
+                <h3>养老服务众多，上门登记、安装智能设备、实时监测健康状况一站式解决方案</h3>
+            </div>
+            <div class="bd">
+                <div class="top">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li>生活照料服务</li>
+                        <li>医疗护理服务</li>
+                        <li>紧急救助服务</li>
+                        <li>精神慰藉服务</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 平台特色 -->
+    <div class="strategy">
+        <div class="wrapper">
+            <div class="hd">
+                <h2><span>----- </span>平台特色<span> -----</span></h2>
+                <h3>我们将进行一键呼救、自动报警、健康检测、火灾监控等一站式服务</h3>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li onmouseenter="olli1Open()">📞一键呼救</li>
+                    <li onmouseenter="olli2Open()">🩺健康检测</li>
+                    <li onmouseenter="olli3Open()">🧯火灾监控</li>
+                </ul>
+                <div class="content">
+                    <img src="./image/olli1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 平台优势 -->
+    <div class="superiority">
+        <div class="wrapper">
+            <div class="hd">
+                <h2><span>----- </span>平台优势<span> -----</span></h2>
+                <h3>始终贯彻“以用户为中心”的宗旨，将“服务”贯穿于平台运作和管理的每一个细节，赢得客户的广泛信任和支持</h3>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <b class="iconfont icon-dingdanshouhou-mianxing"></b>
+                        <span>超长售后质保</span>
+                    </li>
+                    <li>
+                        <b class="iconfont icon-guocheng2"></b>
+                        <span>服务过程透明</span>
+                    </li>
+                    <li>
+                        <b class="iconfont icon-a-kefufuwu"></b>
+                        <span>3-5分钟极速响应</span>
+                    </li>
+                    <li>
+                        <b class="iconfont icon-zixun1"></b>
+                        <span>专业养老咨询师在线</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 核心服务 -->
+    <div class="core">
+        <div class="wrapper">
+            <div class="hd">
+                <h2><span>----- </span>核心服务<span> -----</span></h2>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li onclick="coreli1Open()" onmouseenter="coreli1Open()">🪠生活照料服务</li>
+                    <li onclick="coreli2Open() " onmouseenter="coreli2Open()">🏥医疗护理服务</li>
+                    <li onclick="coreli3Open() " onmouseenter="coreli3Open()">⚠️紧急救助服务</li>
+                    <li onclick="coreli4Open() " onmouseenter="coreli4Open()">🕮精神慰藉服务</li>
+                </ul>
+                <div class="content">
+                    <img src="./image/coreli1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 点击即可跳转顶部 -->
+    <div class="srollTop" style="cursor: pointer;">
+        👆
+    </div>
+    <!-- 护工团队 -->
+    <div class="ursing">
+        <div class="wrapper">
+            <div class="hd">
+                <h2><span>----- </span>护工团队<span> -----</span></h2>
+                <h3>始终贯彻服务宗旨，本平台护工团队均通过护工培训</h3>
+            </div>
+            <div class="bd">
+                <div class="content">
+                    <div class="left">
+                        <img src="./image/ursing1.webp" alt="">
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>姓名：赵晓琳</li>
+                            <li>工作经验：84个月</li>
+                            <li>职业技能：照顾自理老人、照顾不能自理老人、护理病人、做家务</li>
+                            <li>服务项目：医院护工，康复护理</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 合作伙伴 -->
+        <div class="partner">
+            <div class="wrapper">
+                <div class="hd">
+                    <h2><span>----- </span>来自各行各业客户的肯定与信任<span> -----</span></h2>
+                    <h3>诚挚邀请您与我们同行！</h3>
+                </div>
+                <div class="bd">
+                    <h3>🪠生活照料服务提供商</h3>
+                    <ul>
+                        <li><img src="./image/partner/work1.webp" alt=""></li>
+                        <li><img src="./image/partner/work2.webp" alt=""></li>
+                        <li><img src="./image/partner/work3.webp" alt=""></li>
+                        <li><img src="./image/partner/work4.webp" alt=""></li>
+                        <li><img src="./image/partner/work5.webp" alt=""></li>
+                        <li><img src="./image/partner/work6.webp" alt=""></li>
+                        <li><img src="./image/partner/work7.webp" alt=""></li>
+                        <li><img src="./image/partner/work8.webp" alt=""></li>
+                        <li><img src="./image/partner/work9.webp" alt=""></li>
+                        <li><img src="./image/partner/work10.webp" alt=""></li>
+                    </ul>
+                    <h3>⚕️医疗护理服务提供商</h3>
+                    <ul>
+                        <li><img src="./image/partner/medical1.webp" alt=""></li>
+                        <li><img src="./image/partner/medical2.webp" alt=""></li>
+                        <li><img src="./image/partner/medical3.webp" alt=""></li>
+                        <li><img src="./image/partner/medical4.webp" alt=""></li>
+                        <li><img src="./image/partner/medical5.webp" alt=""></li>
+                        <li><img src="./image/partner/medical6.webp" alt=""></li>
+                        <li><img src="./image/partner/medical7.webp" alt=""></li>
+                        <li><img src="./image/partner/medical8.webp" alt=""></li>
+                        <li><img src="./image/partner/medical9.webp" alt=""></li>
+                        <li><img src="./image/partner/medical10.webp" alt=""></li>
+                    </ul>
+                    <h3>⚠️紧急救助服务提供商</h3>
+                    <ul>
+                        <li><img src="./image/partner/help1.webp" alt=""></li>
+                        <li><img src="./image/partner/help2.webp" alt=""></li>
+                        <li><img src="./image/partner/help3.webp" alt=""></li>
+                        <li><img src="./image/partner/help4.webp" alt=""></li>
+                        <li><img src="./image/partner/help5.webp" alt=""></li>
+                        <li><img src="./image/partner/help6.webp" alt=""></li>
+                        <li><img src="./image/partner/help7.webp" alt=""></li>
+                        <li><img src="./image/partner/help8.webp" alt=""></li>
+                        <li><img src="./image/partner/help9.webp" alt=""></li>
+                        <li><img src="./image/partner/help10.webp" alt=""></li>
+                    </ul>
+                    <h3>🕮精神慰藉服务提供商</h3>
+                    <ul>
+                        <li><img src="./image/partner/comfort1.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort2.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort3.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort4.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort5.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort6.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort7.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort8.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort9.webp" alt=""></li>
+                        <li><img src="./image/partner/comfort10.webp" alt=""></li>
+                    </ul>
+                    <div class="push">
+                        <span>👉 加入我们 👈</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 我们的服务 -->
+            <div class="service ">
+                <div class="wrapper">
+                    <div class="hd">
+                        <h2>我们的服务
+                            <span class="iconfont icon-fuwu"></span>
+                        </h2>
+                    </div>
+                    <p>全国老龄办最新统计，截至2017年年底，全国60岁以上老年人口达2.4亿，占总人口比重达17.3%，平均近4个劳动力抚养1位老人。伴随我国人口老龄化程度持续加深，“银发浪潮”将滚滚而来。大多数家庭在面临亲人晚年生活的过程中，都缺乏准备或经验。同时，我们观察到，大部分长辈因各种原因，未能找到合适的养老机构或养老服务。
+                    </p>
+                    <p>"顾养"养老服务平台创办于2023年3月，希望通过真诚、专业、智能化的服务以及先进的互联网信息技术，致力于成为中国家庭养老新生活的倡导者。为寻找最佳养老生活方式的您提供有价值的信息参考和一流的服务。
+                    </p>
+                </div>
+            </div>
+            <!-- 版权部分 -->
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="top">
+                        <ul>
+                            <li>
+                                <span>服务到位</span>
+                            </li>
+                            <li>
+                                <span>智慧养老</span>
+                            </li>
+                            <li>
+                                <span>安心生活</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            <a href="#">关于我们</a> |
+                            <a href="#">帮助中心</a> |
+                            <a href="#">售后服务</a> |
+                            <a href="#">商务合作</a> |
+                            <a href="#">推荐搜索</a> |
+                            <a href="#">友情链接</a>
+                        </p>
+                        <p>CopyRight © 颐养养老服务团队 All rights reserved</p>
+
+                        <p>沪ICP备B2-20100004</p>
+                    </div>
+                </div>
+            </div>
+
+</body>
+<script src="./js/banner.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
