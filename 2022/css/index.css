@@ -1,0 +1,552 @@
+  /* 矩形 1 */
+  nav {
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      /* background: rgb(7, 15, 80); */
+      border: 5px solid linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(106, 90, 255, 0) 100%);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      ;
+      background-image: url(../img/content/opacity0.webp);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      z-index: 1;
+      transition: 0.3s;
+  }
+
+  div.logo {
+      width: 70px;
+      height: 70px;
+      background-image: url(../img/icon.webp);
+      background-size: 100%;
+      background-position: 100%;
+      background-repeat: no-repeat;
+      margin-left: 100px;
+  }
+
+  div.logo:hover {
+      animation: logogif 1s infinite;
+  }
+
+  /* 数字化自然旅游景区 */
+  .nav1 {
+      position: absolute;
+      width: 165px;
+      height: 25px;
+      top: 24px;
+      left: 550px;
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .nav2 {
+      /* 数字化文创产品 */
+      position: absolute;
+      width: 130px;
+      height: 25px;
+      top: 24px;
+      left: 880px;
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .nav3 {
+      /* 景区游戏空间 */
+      position: absolute;
+      width: 112px;
+      height: 25px;
+      top: 24px;
+      left: 1200px;
+
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+
+  nav>span:hover {
+      transition: 0.2s;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      ;
+      height: 30px;
+      color: rgb(40, 64, 175);
+      text-align: right;
+      line-height: 14px;
+      padding-left: 10px;
+      padding-right: 5px;
+      margin-left: -10px;
+      margin-top: -1px;
+      font-weight: bold;
+  }
+
+  nav span.nav1h {
+      position: absolute;
+      width: 165px;
+      height: 25px;
+      top: 24px;
+      left: 550px;
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      transition: 0.2s;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      ;
+      height: 30px;
+      color: rgb(40, 64, 175);
+      text-align: right;
+      line-height: 14px;
+      padding-left: 10px;
+      padding-right: 5px;
+      margin-left: -10px;
+      margin-top: -1px;
+      font-weight: bold;
+  }
+
+  nav span.nav2h {
+      /* 数字化文创产品 */
+      position: absolute;
+      width: 130px;
+      height: 25px;
+      top: 24px;
+      left: 880px;
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      transition: 0.2s;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      ;
+      height: 30px;
+      color: rgb(40, 64, 175);
+      text-align: right;
+      line-height: 14px;
+      padding-left: 10px;
+      padding-right: 5px;
+      margin-left: -10px;
+      margin-top: -1px;
+      font-weight: bold;
+  }
+
+  nav span.nav3h {
+      /* 景区游戏空间 */
+      position: absolute;
+      width: 112px;
+      height: 25px;
+      top: 24px;
+      left: 1200px;
+
+      color: rgb(255, 255, 255);
+      font-family: Noto Sans SC;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+      transition: 0.2s;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      ;
+      height: 30px;
+      color: rgb(40, 64, 175);
+      text-align: right;
+      line-height: 14px;
+      padding-left: 10px;
+      padding-right: 5px;
+      margin-left: -10px;
+      margin-top: -1px;
+      font-weight: bold;
+  }
+
+  div.content {
+      width: 100%;
+      height: 4000px;
+      background-position: cover;
+      background-image: url(../img/content/navbackground.webp);
+      float: left;
+      background-repeat: round;
+  }
+
+  div.content footer.footer {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      top: 3900px;
+      background-color: rgb(24, 8, 46);
+  }
+
+  div.content footer.footer div.text {
+      width: 50%;
+      border: 0px;
+      height: 40px;
+      font-size: 16px;
+      color: azure;
+      margin: 0px auto;
+      text-align: center;
+      padding-top: 60px;
+      font-family: arial
+  }
+
+  a.index {
+      color: azure;
+  }
+
+  a.index:hover {
+      color: aquamarine;
+  }
+
+  div.content div.bottom div.down {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 900px;
+      top: 860px;
+      /* background-color: aqua; */
+  }
+
+  /* 用于设置下滑引导图示 */
+  div.content div.bottom div.down img:nth-child(1) {
+
+      width: 100px;
+      margin-top: -100px;
+      animation: downimggif 1s infinite alternate;
+
+  }
+
+  div.content div.bottom div.down img:nth-child(2) {
+
+      width: 100px;
+      margin-top: -100px;
+      animation: downimggif 1s infinite alternate;
+      animation-delay: 0.4s;
+  }
+
+  div.content div.bottom div.down img:nth-child(3) {
+
+      width: 100px;
+      margin-top: -100px;
+      animation: downimggif 1s infinite alternate;
+      animation-delay: 0.8s;
+  }
+
+  /* 第一部分：数字化自然旅游景区 */
+
+  div.content div.part1 h2.part1h2 {
+      margin: 1000px auto;
+      width: 0px;
+      height: 50px;
+      line-height: 50px;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(40, 64, 175);
+      transition: 0.2s;
+  }
+
+
+  div.content div.part1 {
+      height: 800px;
+
+  }
+
+  div.content div.part1 div.part1img {
+      /* background-color: pink; */
+      width: 1330px;
+      height: 75 0px;
+      margin: -960px auto;
+      position: relative;
+  }
+
+  div.content div.part1 div.part1img img.part1img1 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  div.content div.part1 div.part1img img.part1img2 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  div.content div.part1 div.part1img img.part1img3 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  div.content div.part1 div.part1img img.part1img4 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  /* 第一部分结束 */
+
+  /* 第二部分：数字化文创产品 */
+  div.content div.part2 {
+      height: 800px;
+
+  }
+
+  div.content div.part2 h2.part2h2 {
+      margin: 100px auto;
+      width: 0px;
+      height: 50px;
+      line-height: 50px;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(40, 64, 175);
+      transition: 0.2s;
+  }
+
+
+  div.content div.part2 div.part2img {
+      width: 1330px;
+      height: 750px;
+      margin: -40px auto;
+      position: relative;
+  }
+
+  div.content div.part2 div.part2img img.part2img1 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+
+  }
+
+  div.content div.part2 div.part2img img.part2img2 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+
+  }
+
+  div.content div.part2 div.part2img img.part2img3 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+
+
+  }
+
+  div.content div.part2 div.part2img img.part2img4 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+
+  }
+
+  /* 第二部分结束 */
+
+
+  /* 第三部分：景区游戏空间 */
+  div.content div.part3 {
+      height: 800px;
+
+  }
+
+  div.content div.part3 h2.part3h2 {
+      margin: 100px auto;
+      width: 0px;
+      height: 50px;
+      line-height: 50px;
+      background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(40, 64, 175);
+      transition: 0.2s;
+  }
+
+
+  div.content div.part3 div.part3img {
+      width: 1330px;
+      height: 750px;
+      margin: -40px auto;
+      position: relative;
+  }
+
+  div.content div.part3 div.part3img img.part3img1 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  div.content div.part3 div.part3img img.part3img2 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 0px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+
+  }
+
+  div.content div.part3 div.part3img img.part3img3 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      left: -100px;
+      transition: 2s;
+      opacity: 0;
+  }
+
+  div.content div.part3 div.part3img img.part3img4 {
+      width: 525px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+      ;
+      position: absolute;
+      top: 400px;
+      right: -100px;
+      transition: 2s;
+      opacity: 0;
+
+  }
+
+  /* 第三部分结束 */
