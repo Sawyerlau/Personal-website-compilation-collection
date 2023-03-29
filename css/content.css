@@ -1,0 +1,305 @@
+.c2022 {
+    /* 2022 */
+    position: absolute;
+    width: 417px;
+    height: 200px;
+    top: 80px;
+    left: 160px;
+    background-image: linear-gradient(to left, rgba(244, 250, 104, 1) 0%, rgba(141, 255, 246, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Source Han Sans CN;
+    font-size: 168px;
+    font-weight: 900;
+    line-height: 252px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    animation: t2022gif 2s;
+    animation-iteration-count: 1;
+
+}
+
+/* 用于下载缺失的思源黑体 */
+@font-face {
+
+    font-family: Source Han Sans CN;
+
+    src: url(https://fileres.fonts.net.cn/font-34559-220811220438.zip?response-content-disposition=attachment%3Bfilename%3D%22SiYuanHeiTi-Normal.zip%22&auth_key=1669637644-6384a5d047e3a8x20604800-0-eb8e1e6d10866f78230ab4d905b7661c);
+
+}
+
+.tname {
+    /* 矩形 2 */
+    transform: skew(20deg);
+    position: absolute;
+    width: 387px;
+    height: 120px;
+    top: 153px;
+    left: 586px;
+    background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
+    animation: tnamegif 2s;
+    animation-iteration-count: 1;
+}
+
+.sname {
+    /* 云途元界 */
+    position: absolute;
+    width: 309px;
+    height: 79px;
+    top: 170px;
+    left: 625px;
+
+    color: rgb(40, 64, 175);
+    font-family: Source Han Sans CN;
+    font-size: 77px;
+    font-weight: 900;
+    line-height: 116px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: snamegif 2s;
+    animation-iteration-count: 1;
+}
+
+div.content div.right ul li:nth-child(1) {
+    /* 直线 1 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 153px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(2) {
+    /* 直线 2 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 166px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(3) {
+    /* 直线 3 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 180px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(4) {
+    /* 直线 4 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 194px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(5) {
+    /* 直线 5 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 208px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(6) {
+    /* 直线 6 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 222px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(7) {
+    /* 直线 7 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 236px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(8) {
+    /* 直线 8 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 250px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(9) {
+    /* 直线 9 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 264px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.right ul li:nth-child(10) {
+    /* 直线 10 */
+    position: absolute;
+    width: 31.78px;
+    height: 0;
+    top: 278px;
+    left: 1849px;
+
+
+    border: 3px solid rgb(255, 255, 255);
+    transform: rotate(-12.72deg);
+}
+
+div.content div.left div.Metaverse {
+    /* METAVERSE */
+    position: absolute;
+    width: 576px;
+    height: 147px;
+    top: 575px;
+    left: -100px;
+
+
+    opacity: 0.65;
+    transform: rotate(-90.00deg);
+    color: rgb(217, 238, 255);
+    font-family: Source Han Sans CN;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 144px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.content div.bottom img.wind {
+    width: 550px;
+    position: absolute;
+    top: 370px;
+    left: 900px;
+    animation: windgif 3s alternate infinite;
+}
+
+div.content div.bottom img.VR {
+    width: 500px;
+    position: absolute;
+    top: 450px;
+    left: 700px;
+    animation: VRgif 3s infinite alternate;
+}
+
+div.content div.bottom img.person {
+    width: 900px;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    animation: persongif 3s infinite alternate;
+}
+
+div.content div.bottom {
+    position: relative;
+}
+
+div.content div.top div.title {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation:
+        typing 1s steps(20, end) forwards;
+
+}
+
+div.content div.top div.container div.typed-out {
+    /* 文旅元宇宙 */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    /* 动画 */
+    animation:
+        typing 2s steps(5, end) forwards,
+        blink .8s infinite;
+
+    position: absolute;
+    /* width: 720px; */
+    height: 138px;
+    top: 276px;
+    left: 151px;
+
+    color: rgb(217, 238, 255);
+    font-family: Source Han Sans CN;
+    font-size: 118px;
+    font-weight: 900;
+    line-height: 177px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.content div.top div.container {
+    display: inline-block;
+
+}

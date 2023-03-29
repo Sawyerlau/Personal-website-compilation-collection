@@ -1,0 +1,89 @@
+div.content div.nav1-1 {
+    margin: 100px auto;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(to left, rgba(146, 255, 239, 1) 0%, rgba(237, 250, 113, 1) 100%, rgba(196, 196, 196, 0) 100%);
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(40, 64, 175);
+}
+
+div.content div.item1 {
+    /* 矩形 3 */
+    color: rgb(251, 247, 255);
+    width: 800px;
+    height: 300px;
+    margin: -70px auto;
+    line-height: 34px;
+    font-size: 16px;
+    padding: 50px 30px 20px;
+    text-indent: 32px;
+
+    /*毛玻璃效果*/
+    background: rgba(255, 255, 255, 1), rgba(255, 255, 255, 1);
+    box-shadow: inset 15px 15px 30px rgba(255, 255, 255, 0.2), inset -15px -15px 30px rgba(0, 0, 0, 0.2), 15px 15px 30px rgba(0, 0, 0, 0.2);
+    ;
+    backdrop-filter: blur(50px);
+    border-radius: 75px;
+
+}
+
+div.content div.item1echats1 {
+
+    width: 800px;
+    height: 500px;
+    margin: 100px auto;
+    line-height: 34px;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    text-indent: 32px;
+
+    background: rgba(255, 255, 255, 1);
+    box-shadow: inset 15px 15px 30px rgba(255, 255, 255, 0.2), inset -15px -15px 30px rgba(0, 0, 0, 0.2), 15px 15px 30px rgba(0, 0, 0, 0.2);
+    ;
+    backdrop-filter: blur(50px);
+    border-radius: 75px;
+}
+
+div.content div.item1echats2 {
+
+    color: rgb(251, 247, 255);
+    width: 800px;
+    height: 500px;
+    margin: -70px auto;
+    line-height: 34px;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    text-indent: 32px;
+
+    background: rgba(255, 255, 255, 1);
+    box-shadow: inset 15px 15px 30px rgba(255, 255, 255, 0.2), inset -15px -15px 30px rgba(0, 0, 0, 0.2), 15px 15px 30px rgba(0, 0, 0, 0.2);
+    ;
+    backdrop-filter: blur(50px);
+    border-radius: 75px;
+}
+
+div.content div.item2 {
+    /* 矩形 3 */
+    color: rgb(251, 247, 255);
+    width: 750px;
+    height: 800px;
+    margin: 100px auto;
+    line-height: 34px;
+    font-size: 16px;
+    padding: 50px 30px 20px;
+    text-indent: 32px;
+
+    /*毛玻璃效果*/
+    background: rgba(255, 255, 255, 1), rgba(255, 255, 255, 1);
+    box-shadow: inset 15px 15px 30px rgba(255, 255, 255, 0.2), inset -15px -15px 30px rgba(0, 0, 0, 0.2), 15px 15px 30px rgba(0, 0, 0, 0.2);
+    ;
+    backdrop-filter: blur(50px);
+    border-radius: 75px;
+
+}
