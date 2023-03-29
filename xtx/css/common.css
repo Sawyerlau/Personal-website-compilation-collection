@@ -1,0 +1,263 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+    /* background-color: pink; */
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper ul li {
+    float: left;
+    line-height: 52px;
+
+}
+
+.shortcut .wrapper ul li a {
+    padding: 0px 16px;
+    border-right: 1px solid #666;
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.shortcut .wrapper ul li:nth-child(7) a {
+    border-right: 0px solid #000;
+}
+
+.shortcut .wrapper ul li a span {
+    background-image: url(../images/sprites.png);
+    width: 11px;
+    height: 16px;
+    display: inline-block;
+    background-position: -160px -70px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.header {
+    height: 70px;
+    margin: 30px auto;
+}
+
+.header .logo {
+    width: 207px;
+    height: 70px;
+    float: left;
+}
+
+.header .logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+
+.header .logo h1 a {
+    width: 207px;
+    height: 70px;
+    display: block;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0px;
+    /* 让h1里面的文字看不见 */
+}
+
+.header .nav {
+    margin-left: 40px;
+    height: 70px;
+    float: left;
+}
+
+.header .search {
+    width: 172px;
+    height: 40px;
+    float: left;
+    margin-left: 36px;
+    margin-top: 24px;
+    border-bottom: 2px solid #e7e7e7;
+    position: relative;
+}
+
+.header .search span {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+}
+
+.header .search input {
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+
+.header .search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+/* 购物车 */
+
+.header .car {
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    float: left;
+
+    margin-top: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+
+    position: relative;
+}
+
+.header .car span {
+    line-height: 15px;
+    text-align: center;
+    width: 20px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #e26237;
+    color: #fff;
+    font-size: 13px;
+    /* 由于此处为绝对定位,则盒子具备行内块的特点 */
+    position: absolute;
+    right: -13px;
+    top: -6px;
+}
+
+/* 导航 */
+.header .nav ul li {
+    margin-right: 48px;
+    float: left;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+.header .nav ul {
+    float: left;
+}
+
+.header .nav ul li a {
+    padding: 7px 0px;
+}
+
+.header .nav ul li a:hover {
+
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+
+/* 版权footer */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .wrapper .top {
+    height: 175px;
+    border-bottom: 3px solid #434343;
+    padding-top: 59px;
+    padding-left: 120px;
+}
+
+.footer .wrapper .top li {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 58px;
+    /* background-color: pink; */
+    margin-right: 300px;
+    line-height: 58px;
+}
+
+.footer .wrapper .top li:last-child {
+    margin-right: 0px;
+}
+
+.footer .wrapper .top li span {
+    color: #fff;
+    font-size: 28px;
+    margin-left: 77px;
+}
+
+
+/* 伪元素添加的标签,行内 */
+/* 如果行内块和行内文字无法通过vertical-align或者行高对齐,就可以使用定位对齐 */
+
+.footer .wrapper .top li:nth-child(1)::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+    width: 58px;
+    height: 58px;
+    content: "";
+    margin-right: 19px;
+}
+
+.footer .wrapper .top li:nth-child(2)::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+    width: 58px;
+    height: 58px;
+    content: "";
+    margin-right: 19px;
+}
+
+.footer .wrapper .top li:nth-child(3)::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/sprites.png);
+    background-position: -65px 0;
+    width: 58px;
+    height: 58px;
+    content: "";
+    margin-right: 19px;
+}
+
+/* footer 的bottom */
+.footer .bottom {
+    padding-top: 40px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer .bottom p a {
+    color: #999;
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+.footer .bottom p:nth-child(2) {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
